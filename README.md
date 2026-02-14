@@ -1,0 +1,2 @@
+# static
+Arquivos auxiliares estáticos
