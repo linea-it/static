@@ -1,2 +1,5 @@
-# static
-Arquivos auxiliares estáticos disponíveis em www.linea.org.br/static/
+# STATIC
+
+Repositório de arquivos auxiliares estáticos.
+
+Mudanças aqui ficam disponíveis em www.linea.org.br/static/
