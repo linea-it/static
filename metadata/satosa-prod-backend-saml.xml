@@ -1,0 +1,48 @@
+<ns0:EntityDescriptor
+	xmlns:ns0="urn:oasis:names:tc:SAML:2.0:metadata"
+	xmlns:ns1="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol"
+	xmlns:ns2="urn:oasis:names:tc:SAML:metadata:ui"
+	xmlns:ns3="http://www.w3.org/2000/09/xmldsig#" entityID="https://satosa.linea.org.br/Saml2/metadata.xml">
+	<ns0:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" AuthnRequestsSigned="false" WantAssertionsSigned="true">
+		<ns0:Extensions>
+			<ns1:DiscoveryResponse Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://satosa.linea.org.br/Saml2/disco" index="1" />
+			<ns2:UIInfo>
+				<ns2:DisplayName xml:lang="en">LIneA</ns2:DisplayName>
+				<ns2:Description xml:lang="en">Laboratório Interinstitucional de e-Astronomia</ns2:Description>
+				<ns2:Keywords xml:lang="se">Satosa SP-SE</ns2:Keywords>
+				<ns2:Keywords xml:lang="en">Satosa SP-EN</ns2:Keywords>
+				<ns2:InformationURL xml:lang="en">https://www.linea.org.br/</ns2:InformationURL>
+				<ns2:PrivacyStatementURL xml:lang="en">https://identity.linea.org.br/terms.html</ns2:PrivacyStatementURL>
+			</ns2:UIInfo>
+		</ns0:Extensions>
+		<ns0:KeyDescriptor use="signing">
+			<ns3:KeyInfo>
+				<ns3:X509Data>
+					<ns3:X509Certificate>MIIDnTCCAoWgAwIBAgIJAOkMuDsBYv4zMA0GCSqGSIb3DQEBCwUAMGUxCzAJBgNVBAYTAkJSMQswCQYDVQQIDAJSSjELMAkGA1UEBwwCUkoxDjAMBgNVBAoMBUxJbmVBMQ4wDAYDVQQLDAVMSW5lQTEcMBoGA1UEAwwTc2F0b3NhLmxpbmVhLm9yZy5icjAeFw0yMjA3MjkxMzU4MTRaFw0zMjA3MjYxMzU4MTRaMGUxCzAJBgNVBAYTAkJSMQswCQYDVQQIDAJSSjELMAkGA1UEBwwCUkoxDjAMBgNVBAoMBUxJbmVBMQ4wDAYDVQQLDAVMSW5lQTEcMBoGA1UEAwwTc2F0b3NhLmxpbmVhLm9yZy5icjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAOMfcEmmQ28FyTbclHJtotP+fkMc0qgRGUzrPdDQcU5ZKkR61XKeNS9KLCRq6XYzDvixSnNddcnPme7+6B6XaKvnmZaw413uOE7qt6juDpp1ojfYQN1C8mlcc/HHFBEZXoLRiTWd/EvFU72WgR7mvDGRAvh9HharGqcVpN1R5tcJBtG59gUBFtJYAzeXkAHs8L/KKUyLNh77ipA7isNVB8Ad603f/IV5erzQ9BJKWquKrb0JJYdtP2hmVxUhUBahtGgrj+a40iyfx8OrHuuUCEUyGOGRfo2weDcn6c2u29M3X2iwG52jgHbMm7+6GLno20R/ExplEFg7hHivayYbFh0CAwEAAaNQME4wHQYDVR0OBBYEFJ3umEw81nHgNMAApfZi4rOwm7eCMB8GA1UdIwQYMBaAFJ3umEw81nHgNMAApfZi4rOwm7eCMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQELBQADggEBAJmCckP1+F9bryjuJEUUDLprxrpyPm+KcAbKajzu6hkCGL17APBifoCYJ9P3Zu4DafpkSXlD1oOgT0Pz/CCEsco/XCrS4/74RdKW4Fym+cgGo4ed+OfI672ID6/W2eJPPB2mhr2NE6dE7xf7gvslq4GCfbWQM1FuCOUt82J+R8lQUdC1zkDPUFEPwzjiY/J29tEXyR6UTSCMhw1K1NCA8WHA9rNzejjhjug84WYi2UJb30PRTOEqTmLAytYngnaiSxJH02DRzdXC5iz5NEt9xOG+5GEIuc45nsVEeaLwegoNm9pzEZGIUaV0yIe6hzgcXSg8j3HLlS/cUUTG4y8NccA=</ns3:X509Certificate>
+				</ns3:X509Data>
+			</ns3:KeyInfo>
+		</ns0:KeyDescriptor>
+		<ns0:KeyDescriptor use="encryption">
+			<ns3:KeyInfo>
+				<ns3:X509Data>
+					<ns3:X509Certificate>MIIDnTCCAoWgAwIBAgIJAOkMuDsBYv4zMA0GCSqGSIb3DQEBCwUAMGUxCzAJBgNVBAYTAkJSMQswCQYDVQQIDAJSSjELMAkGA1UEBwwCUkoxDjAMBgNVBAoMBUxJbmVBMQ4wDAYDVQQLDAVMSW5lQTEcMBoGA1UEAwwTc2F0b3NhLmxpbmVhLm9yZy5icjAeFw0yMjA3MjkxMzU4MTRaFw0zMjA3MjYxMzU4MTRaMGUxCzAJBgNVBAYTAkJSMQswCQYDVQQIDAJSSjELMAkGA1UEBwwCUkoxDjAMBgNVBAoMBUxJbmVBMQ4wDAYDVQQLDAVMSW5lQTEcMBoGA1UEAwwTc2F0b3NhLmxpbmVhLm9yZy5icjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAOMfcEmmQ28FyTbclHJtotP+fkMc0qgRGUzrPdDQcU5ZKkR61XKeNS9KLCRq6XYzDvixSnNddcnPme7+6B6XaKvnmZaw413uOE7qt6juDpp1ojfYQN1C8mlcc/HHFBEZXoLRiTWd/EvFU72WgR7mvDGRAvh9HharGqcVpN1R5tcJBtG59gUBFtJYAzeXkAHs8L/KKUyLNh77ipA7isNVB8Ad603f/IV5erzQ9BJKWquKrb0JJYdtP2hmVxUhUBahtGgrj+a40iyfx8OrHuuUCEUyGOGRfo2weDcn6c2u29M3X2iwG52jgHbMm7+6GLno20R/ExplEFg7hHivayYbFh0CAwEAAaNQME4wHQYDVR0OBBYEFJ3umEw81nHgNMAApfZi4rOwm7eCMB8GA1UdIwQYMBaAFJ3umEw81nHgNMAApfZi4rOwm7eCMAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQELBQADggEBAJmCckP1+F9bryjuJEUUDLprxrpyPm+KcAbKajzu6hkCGL17APBifoCYJ9P3Zu4DafpkSXlD1oOgT0Pz/CCEsco/XCrS4/74RdKW4Fym+cgGo4ed+OfI672ID6/W2eJPPB2mhr2NE6dE7xf7gvslq4GCfbWQM1FuCOUt82J+R8lQUdC1zkDPUFEPwzjiY/J29tEXyR6UTSCMhw1K1NCA8WHA9rNzejjhjug84WYi2UJb30PRTOEqTmLAytYngnaiSxJH02DRzdXC5iz5NEt9xOG+5GEIuc45nsVEeaLwegoNm9pzEZGIUaV0yIe6hzgcXSg8j3HLlS/cUUTG4y8NccA=</ns3:X509Certificate>
+				</ns3:X509Data>
+			</ns3:KeyInfo>
+		</ns0:KeyDescriptor>
+		<ns0:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</ns0:NameIDFormat>
+		<ns0:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://satosa.linea.org.br/Saml2/acs/post" index="1" />
+	</ns0:SPSSODescriptor>
+	<ns0:Organization>
+		<ns0:OrganizationName xml:lang="en">Laboratório Interinstitucional de e-Astronomia</ns0:OrganizationName>
+		<ns0:OrganizationDisplayName xml:lang="en">LIneA</ns0:OrganizationDisplayName>
+		<ns0:OrganizationURL xml:lang="en">http://www.linea.org.br</ns0:OrganizationURL>
+	</ns0:Organization>
+	<ns0:ContactPerson contactType="technical">
+		<ns0:GivenName>Technical</ns0:GivenName>
+		<ns0:EmailAddress>carlosadean@linea.org.br</ns0:EmailAddress>
+	</ns0:ContactPerson>
+	<ns0:ContactPerson contactType="support">
+		<ns0:GivenName>Support</ns0:GivenName>
+		<ns0:EmailAddress>helpdesk@linea.org.br</ns0:EmailAddress>
+	</ns0:ContactPerson>
+</ns0:EntityDescriptor>

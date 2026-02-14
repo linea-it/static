@@ -1,0 +1,50 @@
+<ns0:EntityDescriptor
+	xmlns:ns0="urn:oasis:names:tc:SAML:2.0:metadata"
+	xmlns:ns1="urn:oasis:names:tc:SAML:metadata:ui"
+	xmlns:ns2="http://www.w3.org/2000/09/xmldsig#" entityID="https://satosa.linea.org.br/linea_saml/proxy">
+	<ns0:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" WantAuthnRequestsSigned="false">
+		<ns0:Extensions>
+			<ns1:UIInfo>
+				<ns1:DisplayName xml:lang="en">LIneA</ns1:DisplayName>
+				<ns1:Description xml:lang="en">LIneA</ns1:Description>
+				<ns1:Keywords xml:lang="se">Satosa IdP-SE</ns1:Keywords>
+				<ns1:Keywords xml:lang="en">Satosa IdP-EN</ns1:Keywords>
+				<ns1:Logo height="100" width="100">http://idp.logo.url/</ns1:Logo>
+				<ns1:InformationURL xml:lang="en">http://idp.information.url/</ns1:InformationURL>
+				<ns1:PrivacyStatementURL xml:lang="en">http://idp.privacy.url/</ns1:PrivacyStatementURL>
+			</ns1:UIInfo>
+		</ns0:Extensions>
+		<ns0:KeyDescriptor use="signing">
+			<ns2:KeyInfo>
+				<ns2:X509Data>
+					<ns2:X509Certificate>MIIDDzCCAfegAwIBAgIJAPo6Qry4Q61jMA0GCSqGSIb3DQEBCwUAMB4xHDAaBgNVBAMME3NhdG9zYS5saW5lYS5nb3YuYnIwHhcNMjEwMzE5MDE0ODE2WhcNMzEwMzE3MDE0ODE2WjAeMRwwGgYDVQQDDBNzYXRvc2EubGluZWEuZ292LmJyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2IlErDfBdog0+qT+CjNjQO7tcd67uvPpkxC80edsohqJ98SkUH3GUD8gM+0H0Mtgj51ua6oUeIeYMD2kyc2gqyaXlcizPqDKwwuj3G7rgK/0KSHRJcl2dAVvYAaeGQ0sgs4sgpGeZhPTGbNLvQmOa7E/c8mXmOuBEJjYFwJ68m2bfJagIBjJYEaSAWKBJFeW7uVf+ooT9VYAuP9QOlmL8YaMbc0XUrGZ6M2O+ie09xxk8cwLVREreV4Ac4E+wfrfKka9DbugnthBVJYEcnlnrLzhFXkMxNwap3QUC7ih8x6GGNAoFyAVV3LEjZvg2pBYX5NxPrNQLlMdMflYorm/AwIDAQABo1AwTjAdBgNVHQ4EFgQUVp++kCgyEImPtbdcIs509YHqcNMwHwYDVR0jBBgwFoAUVp++kCgyEImPtbdcIs509YHqcNMwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAQEAfbYE/Fc51KS4FjR7DgnT9W1iETdzLRtWbBg3xxW7XWxLtUDD0j0+n2iHKXDjqMSTZI0vWqrob6ns85VE/hnkWfR84EOM+Dg1XhEVjAjF5sHc0xtcMsFDf46yqVeEATiU3dxzWRzh8c/8qxPdMU1Tf0jWfYtJ3FPiQBd5WqgxW01EK6VSvoZ/toAq3uDxO3aTCWsFWX63YIvPf5uNmHYAhXnEUVAO3wVZ84ETxCno3+35eg7O2KYzM1ljKogMtXiZoSWJ5C4G7nEcZeElx+oCB2iFc76Uk93ZTiXmpmTJutxhTB4vsg52dvOzpkA0gj8lDKy7TeDDbLS1/HGXN6MjsQ==</ns2:X509Certificate>
+				</ns2:X509Data>
+			</ns2:KeyInfo>
+		</ns0:KeyDescriptor>
+		<ns0:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</ns0:NameIDFormat>
+		<ns0:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</ns0:NameIDFormat>
+		<ns0:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://satosa.linea.org.br/Saml2/sso/post" />
+		<ns0:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://satosa.linea.org.br/github/sso/post" />
+		<ns0:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://satosa.linea.org.br/google/sso/post" />
+		<ns0:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://satosa.linea.org.br/facebook/sso/post" />
+		<ns0:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://satosa.linea.org.br/openid_connect/sso/post" />
+		<ns0:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://satosa.linea.org.br/Saml2/sso/redirect" />
+		<ns0:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://satosa.linea.org.br/github/sso/redirect" />
+		<ns0:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://satosa.linea.org.br/google/sso/redirect" />
+		<ns0:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://satosa.linea.org.br/facebook/sso/redirect" />
+		<ns0:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://satosa.linea.org.br/openid_connect/sso/redirect" />
+	</ns0:IDPSSODescriptor>
+	<ns0:Organization>
+		<ns0:OrganizationName xml:lang="en">LIneA.</ns0:OrganizationName>
+		<ns0:OrganizationDisplayName xml:lang="en">LIneA</ns0:OrganizationDisplayName>
+		<ns0:OrganizationURL xml:lang="en">http://www.linea.org.br</ns0:OrganizationURL>
+	</ns0:Organization>
+	<ns0:ContactPerson contactType="technical">
+		<ns0:GivenName>Technical</ns0:GivenName>
+		<ns0:EmailAddress>carlosadean@linea.org.br</ns0:EmailAddress>
+	</ns0:ContactPerson>
+	<ns0:ContactPerson contactType="support">
+		<ns0:GivenName>Support</ns0:GivenName>
+		<ns0:EmailAddress>helpdesk@linea.org.br</ns0:EmailAddress>
+	</ns0:ContactPerson>
+</ns0:EntityDescriptor>

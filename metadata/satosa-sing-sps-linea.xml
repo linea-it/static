@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EntitiesDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata"
+                    ID="lineas-sps"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+                    xmlns:shibmd="urn:mace:shibboleth:metadata:1.0"
+                    xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui"
+                    xmlns:mdrpi="urn:oasis:names:tc:SAML:metadata:rpi"
+                    xsi:schemaLocation="urn:oasis:names:tc:SAML:2.0:metadata ../schemas/saml-schema-metadata-2.0.xsd urn:mace:shibboleth:metadata:1.0 ../schemas/shibboleth-metadata-1.0.xsd http://www.w3.org/2000/09/xmldsig# ../schemas/xmldsig-core-schema.xsd"
+                    Name="urn:mace:shibboleth:linea">
+    
+   <!--=================================================================================================================================-->
+   <!--Provedores de Serviço-->
+   <!--Arquivo contendo todos os metadados SAML dos serviços que estão conectados no Satosa de desenvolvimento                          -->
+   <!--Um novo metadado deve ser inserido no final do arquivo antes da tag de fechamento do elemento `EntitiesDescriptor`               -->
+   <!--Para manter a organização, adicione o novo XML dentro de comentários que indicam o inicio e fim do metadado conforme exemplos    -->
+   <!--=================================================================================================================================-->
+   
+   <!--=================================================================================================================================-->
+   <!--Inicio do Metadado do COmanage de Desenvolvimento do LIneA (https://register-dev.linea.org.br/Shibboleth.sso/Metadata)-->
+   <!--=================================================================================================================================-->
+
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="_813d51fbc208875a9b9754390f0c37f4f7cbd251" entityID="https://register-dev.linea.org.br/shibboleth">
+
+  <md:Extensions xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
+    <mdattr:EntityAttributes xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
+                        <saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                        <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+                        </saml:Attribute>
+                </mdattr:EntityAttributes><alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha512"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha384"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha224"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2009/xmldsig11#dsa-sha256"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha1"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
+  </md:Extensions>
+
+  <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <md:Extensions>
+      <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
+                	<mdui:DisplayName xml:lang="en">ServiceDisplayName</mdui:DisplayName>
+                	<mdui:Description xml:lang="en">ServiceDescription</mdui:Description>
+		        </mdui:UIInfo><init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://register-dev.linea.org.br/Shibboleth.sso/Login"/>
+      <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://register-dev.linea.org.br/Shibboleth.sso/Login" index="1"/>
+    </md:Extensions>
+    <md:KeyDescriptor use="signing">
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:KeyName>comanage-dev.linea.org.br</ds:KeyName>
+        <ds:KeyName>https://comanage-dev.linea.org.br/shibboleth</ds:KeyName>
+        <ds:X509Data>
+          <ds:X509SubjectName>CN=comanage-dev.linea.org.br</ds:X509SubjectName>
+          <ds:X509Certificate>MIIEQDCCAqigAwIBAgIJAJ+XPB3AfYIMMA0GCSqGSIb3DQEBCwUAMCQxIjAgBgNV
+BAMTGWNvbWFuYWdlLWRldi5saW5lYS5vcmcuYnIwHhcNMjQwMTA5MTUxNTE2WhcN
+MjcwMTA5MTUxNTE2WjAkMSIwIAYDVQQDExljb21hbmFnZS1kZXYubGluZWEub3Jn
+LmJyMIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEA2CAURipcd7QP13k9
+S4xgb1XnZoi8pxeKNl3taOp5fvgZwaJqodXWcmlqEVwTGq/ploY2C+HkQZ4M70EU
+q/YNOnU2JV8sdO6Dps9zOLgvNqW2xy/jfL8EFIjzy8yC7HUauI4Zm0WoFItmqAAL
+hP9blmCrXXjhD83TWwFq1Z+v/hEn38imdaneCk4G8Gff5qYjBjHLWnKJ18AM6A7d
+ungiIbaXRpN5ohZxPZBPpMFrMR2b6enm64O4MvrWSSey1sV6cggGlVzzM4AgHuBy
+dSWyGyXRq0ZvlgdL6eneWvMdQ0eW2o5/y/+RCYsdk8D/iI3acqj/Rz2IXVfA4tFK
+HjItdsGVmwK7z35LbzShZEdRGAZnAEyrOmk3nr++05NxK4l/rfEr9oYOnbmCjHtd
+q8UkpEDJDFD4ETpFKItiXZUTuCEhljt6DynkLloC1WhyLVskvb61zw+4um46C6zn
+bY/c6QtmhtuIdJtiRKOZ2QluCvONSrkAMBzcPuQoZGvRsWABAgMBAAGjdTBzMFIG
+A1UdEQRLMEmCGWNvbWFuYWdlLWRldi5saW5lYS5vcmcuYnKGLGh0dHBzOi8vY29t
+YW5hZ2UtZGV2LmxpbmVhLm9yZy5ici9zaGliYm9sZXRoMB0GA1UdDgQWBBTQwTjn
+BE7/sDmQCyus4P7b1EyYXjANBgkqhkiG9w0BAQsFAAOCAYEASe6cqP7kr6gHNhpf
+KLm4weNyA5oZvB1kjjhIdTVazEraQ/vJ01XaeY5UEPphyE1rUgUR9BMNo/7J68+Z
+HcEWLZ49jV9BPFJeg9K/ThLgICViXHi75hYHMLyfaJlUJNtaUqzdey52wfmeoPu+
+ltZgoPCAS2NIhsTq1J3d4hZu1Evd/v017aKiUY9F3POTWau0QjaBavZjV47V5ZCR
+BEkD5jnxyBz2gjia6T3v1/+5l/wNPE1Jv4A3dw3NKZ244wSs9m2HISyKSRKL3rOa
+fATQIPfmco29nruUHhcylMuB6WH0w1A7aw+K3OljzwTBkn9JCCt9zkoPzjF1tk9w
+OJ25GV2NXAbebogeImF1SL4F2Xg/rKjHbE2VYSpgYbMdH2K/ouuHjFCqZ/biIAmG
+RYGLJUqENyVQeHRHXnL+wa5bacfi4EClSL3GvgNJm0Hd3AJKkfakGmMziB8/zq38
+HirF4P5bTkciUU0PCA5gAAXasYQ2CKxYWHV4psmZ7kBzyHqo
+</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </md:KeyDescriptor>
+    <md:KeyDescriptor use="encryption">
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:KeyName>comanage-dev.linea.org.br</ds:KeyName>
+        <ds:KeyName>https://comanage-dev.linea.org.br/shibboleth</ds:KeyName>
+        <ds:X509Data>
+          <ds:X509SubjectName>CN=comanage-dev.linea.org.br</ds:X509SubjectName>
+          <ds:X509Certificate>MIIEQDCCAqigAwIBAgIJAJ+XPB3AfYIMMA0GCSqGSIb3DQEBCwUAMCQxIjAgBgNV
+BAMTGWNvbWFuYWdlLWRldi5saW5lYS5vcmcuYnIwHhcNMjQwMTA5MTUxNTE2WhcN
+MjcwMTA5MTUxNTE2WjAkMSIwIAYDVQQDExljb21hbmFnZS1kZXYubGluZWEub3Jn
+LmJyMIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEA2CAURipcd7QP13k9
+S4xgb1XnZoi8pxeKNl3taOp5fvgZwaJqodXWcmlqEVwTGq/ploY2C+HkQZ4M70EU
+q/YNOnU2JV8sdO6Dps9zOLgvNqW2xy/jfL8EFIjzy8yC7HUauI4Zm0WoFItmqAAL
+hP9blmCrXXjhD83TWwFq1Z+v/hEn38imdaneCk4G8Gff5qYjBjHLWnKJ18AM6A7d
+ungiIbaXRpN5ohZxPZBPpMFrMR2b6enm64O4MvrWSSey1sV6cggGlVzzM4AgHuBy
+dSWyGyXRq0ZvlgdL6eneWvMdQ0eW2o5/y/+RCYsdk8D/iI3acqj/Rz2IXVfA4tFK
+HjItdsGVmwK7z35LbzShZEdRGAZnAEyrOmk3nr++05NxK4l/rfEr9oYOnbmCjHtd
+q8UkpEDJDFD4ETpFKItiXZUTuCEhljt6DynkLloC1WhyLVskvb61zw+4um46C6zn
+bY/c6QtmhtuIdJtiRKOZ2QluCvONSrkAMBzcPuQoZGvRsWABAgMBAAGjdTBzMFIG
+A1UdEQRLMEmCGWNvbWFuYWdlLWRldi5saW5lYS5vcmcuYnKGLGh0dHBzOi8vY29t
+YW5hZ2UtZGV2LmxpbmVhLm9yZy5ici9zaGliYm9sZXRoMB0GA1UdDgQWBBTQwTjn
+BE7/sDmQCyus4P7b1EyYXjANBgkqhkiG9w0BAQsFAAOCAYEASe6cqP7kr6gHNhpf
+KLm4weNyA5oZvB1kjjhIdTVazEraQ/vJ01XaeY5UEPphyE1rUgUR9BMNo/7J68+Z
+HcEWLZ49jV9BPFJeg9K/ThLgICViXHi75hYHMLyfaJlUJNtaUqzdey52wfmeoPu+
+ltZgoPCAS2NIhsTq1J3d4hZu1Evd/v017aKiUY9F3POTWau0QjaBavZjV47V5ZCR
+BEkD5jnxyBz2gjia6T3v1/+5l/wNPE1Jv4A3dw3NKZ244wSs9m2HISyKSRKL3rOa
+fATQIPfmco29nruUHhcylMuB6WH0w1A7aw+K3OljzwTBkn9JCCt9zkoPzjF1tk9w
+OJ25GV2NXAbebogeImF1SL4F2Xg/rKjHbE2VYSpgYbMdH2K/ouuHjFCqZ/biIAmG
+RYGLJUqENyVQeHRHXnL+wa5bacfi4EClSL3GvgNJm0Hd3AJKkfakGmMziB8/zq38
+HirF4P5bTkciUU0PCA5gAAXasYQ2CKxYWHV4psmZ7kBzyHqo
+</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes128-gcm"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes192-gcm"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes256-gcm"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
+    </md:KeyDescriptor>
+    <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://register-dev.linea.org.br/Shibboleth.sso/Artifact/SOAP" index="1"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://register-dev.linea.org.br/Shibboleth.sso/SLO/SOAP"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://register-dev.linea.org.br/Shibboleth.sso/SLO/Redirect"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://register-dev.linea.org.br/Shibboleth.sso/SLO/POST"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://register-dev.linea.org.br/Shibboleth.sso/SLO/Artifact"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://register-dev.linea.org.br/Shibboleth.sso/SAML2/POST" index="1"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://register-dev.linea.org.br/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://register-dev.linea.org.br/Shibboleth.sso/SAML2/Artifact" index="3"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://register-dev.linea.org.br/Shibboleth.sso/SAML2/ECP" index="4"/>
+  </md:SPSSODescriptor>
+
+  <md:ContactPerson contactType="support">
+                        <md:GivenName>Carlos</md:GivenName>
+                        <md:SurName>Adean</md:SurName>
+                        <md:EmailAddress>helpdesk@linea.org.br</md:EmailAddress>
+                </md:ContactPerson>
+</md:EntityDescriptor>
+
+   <!--=================================================================================================================================-->
+   <!--Fim do Metadado do COmanage de Desenvolvimento do LIneA-->
+   <!--=================================================================================================================================-->
+   
+   <!--=================================================================================================================================-->
+   <!--Inicio do Metadado do PZ Server de Desenvolvimento (https://pz-server-dev.linea.org.br/Shibboleth.sso/Metadata) -->
+   <!--=================================================================================================================================-->
+
+<md:EntityDescriptor xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ns1="urn:oasis:names:tc:SAML:metadata:algsupport" xmlns:ns2="urn:oasis:names:tc:SAML:metadata:ui" entityID="https://pzserver-dev.linea.org.br/saml2/metadata/">
+<md:Extensions>
+<ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#md5"/>
+<ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#ripemd160"/>
+<ns1:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+<ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224"/>
+<ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+<ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
+<ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
+<ns1:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
+<ns1:SigningMethod Algorithm="http://www.w3.org/2009/xmldsig11#dsa-sha256"/>
+<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha1"/>
+<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha224"/>
+<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256"/>
+<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha384"/>
+<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha512"/>
+<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-md5"/>
+<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-ripemd160"/>
+<ns1:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha224"/>
+<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/>
+<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
+</md:Extensions>
+<md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" AuthnRequestsSigned="true" WantAssertionsSigned="false">
+<md:Extensions>
+<ns2:UIInfo>
+<ns2:DisplayName xml:lang="en">SP Pz</ns2:DisplayName>
+<ns2:Description xml:lang="en">Pz Service Provider</ns2:Description>
+<ns2:InformationURL xml:lang="en">https://pzserver-dev.linea.org.br/about</ns2:InformationURL>
+<ns2:PrivacyStatementURL xml:lang="en">https://pzserver-dev.linea.org.br</ns2:PrivacyStatementURL>
+</ns2:UIInfo>
+</md:Extensions>
+<md:KeyDescriptor use="signing">
+<ds:KeyInfo>
+<ds:X509Data>
+<ds:X509Certificate>MIIDqzCCApOgAwIBAgIJAPo4vkCnBZ1/MA0GCSqGSIb3DQEBCwUAMGwxCzAJBgNVBAYTAkJSMQswCQYDVQQIDAJSSjELMAkGA1UEBwwCUkoxDjAMBgNVBAoMBUxJbmVBMQ4wDAYDVQQLDAVMSW5lQTEjMCEGA1UEAwwacHotc2VydmVyLWRldi5saW5lYS5vcmcuYnIwHhcNMjIwODE3MTIzOTUyWhcNMzIwODE0MTIzOTUyWjBsMQswCQYDVQQGEwJCUjELMAkGA1UECAwCUkoxCzAJBgNVBAcMAlJKMQ4wDAYDVQQKDAVMSW5lQTEOMAwGA1UECwwFTEluZUExIzAhBgNVBAMMGnB6LXNlcnZlci1kZXYubGluZWEub3JnLmJyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwDZLKgeYN4/dbYXiWAyaIL08JLFZQyX2uq1Pi4ucbuPw2eSJw3Cs1Ze8kXAU895cPjbg9ebiDpQHqCt/e9fK2vT2q+fN1dFkaTIM7fxq+YsvmenODAV7GQL5/2XXyKSitrJiFmvWvonRqO9rbnIbaKt1CakjdKL2oVXN5/TZ8UVJrrvlpcO99KC+ZTZdkG3vSRhbCNep38mNMtv9QDnb9IdKanwJIB1FS1GjSzy9z8s9n1FwK4Xrv/ams3tf1v2Mh2w2Zf7/UgF5JuRpY9phTbJtBi++gAZEkc/D/jB16dmGs2wV70lqZqiiCHwLJitB7eJkHgPeXiSC4XkDcl+pxQIDAQABo1AwTjAdBgNVHQ4EFgQUO7ygcHX/41kDmynHvvI0mSrLM0gwHwYDVR0jBBgwFoAUO7ygcHX/41kDmynHvvI0mSrLM0gwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAQEAHBoZ3mMJqPFvqzPt/4064vU7miytWGXLDYAimrVpchxzDSJa2ClgXzx4LTp8UYGGKrHDxph2Ynq8bSJVdwKx7XXrDSlwAOZFEhsPDxe4Kk+QMKH3971V+cAK99csk6n0dLyK/WK7Pm4F2o/NHhKiiGuRIq61gMvK/llDMVqbN5ComOrUnbl1S7/mnjf5nyY6+mq3sdz4V91Tf9p3/xDHO76wlA47NpVNAoAmajOXfSlKak+gQ71fte3JTqOsCTYuwlrClCb5fXc1Rhquv4HnYsgLmUGLNArmdEiwdIzMXIKb2cmSXchOFi8rtpXzHZCf4lZT5ufEq+j52BM/llZzbQ==</ds:X509Certificate>
+</ds:X509Data>
+</ds:KeyInfo>
+</md:KeyDescriptor>
+<md:KeyDescriptor use="encryption">
+<ds:KeyInfo>
+<ds:X509Data>
+<ds:X509Certificate>MIIDqzCCApOgAwIBAgIJAPo4vkCnBZ1/MA0GCSqGSIb3DQEBCwUAMGwxCzAJBgNVBAYTAkJSMQswCQYDVQQIDAJSSjELMAkGA1UEBwwCUkoxDjAMBgNVBAoMBUxJbmVBMQ4wDAYDVQQLDAVMSW5lQTEjMCEGA1UEAwwacHotc2VydmVyLWRldi5saW5lYS5vcmcuYnIwHhcNMjIwODE3MTIzOTUyWhcNMzIwODE0MTIzOTUyWjBsMQswCQYDVQQGEwJCUjELMAkGA1UECAwCUkoxCzAJBgNVBAcMAlJKMQ4wDAYDVQQKDAVMSW5lQTEOMAwGA1UECwwFTEluZUExIzAhBgNVBAMMGnB6LXNlcnZlci1kZXYubGluZWEub3JnLmJyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwDZLKgeYN4/dbYXiWAyaIL08JLFZQyX2uq1Pi4ucbuPw2eSJw3Cs1Ze8kXAU895cPjbg9ebiDpQHqCt/e9fK2vT2q+fN1dFkaTIM7fxq+YsvmenODAV7GQL5/2XXyKSitrJiFmvWvonRqO9rbnIbaKt1CakjdKL2oVXN5/TZ8UVJrrvlpcO99KC+ZTZdkG3vSRhbCNep38mNMtv9QDnb9IdKanwJIB1FS1GjSzy9z8s9n1FwK4Xrv/ams3tf1v2Mh2w2Zf7/UgF5JuRpY9phTbJtBi++gAZEkc/D/jB16dmGs2wV70lqZqiiCHwLJitB7eJkHgPeXiSC4XkDcl+pxQIDAQABo1AwTjAdBgNVHQ4EFgQUO7ygcHX/41kDmynHvvI0mSrLM0gwHwYDVR0jBBgwFoAUO7ygcHX/41kDmynHvvI0mSrLM0gwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAQEAHBoZ3mMJqPFvqzPt/4064vU7miytWGXLDYAimrVpchxzDSJa2ClgXzx4LTp8UYGGKrHDxph2Ynq8bSJVdwKx7XXrDSlwAOZFEhsPDxe4Kk+QMKH3971V+cAK99csk6n0dLyK/WK7Pm4F2o/NHhKiiGuRIq61gMvK/llDMVqbN5ComOrUnbl1S7/mnjf5nyY6+mq3sdz4V91Tf9p3/xDHO76wlA47NpVNAoAmajOXfSlKak+gQ71fte3JTqOsCTYuwlrClCb5fXc1Rhquv4HnYsgLmUGLNArmdEiwdIzMXIKb2cmSXchOFi8rtpXzHZCf4lZT5ufEq+j52BM/llZzbQ==</ds:X509Certificate>
+</ds:X509Data>
+</ds:KeyInfo>
+</md:KeyDescriptor>
+<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://pzserver-dev.linea.org.br/saml2/ls/"/>
+<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://pzserver-dev.linea.org.br/saml2/ls/post"/>
+<md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+<md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://pzserver-dev.linea.org.br/saml2/acs/" index="1"/>
+</md:SPSSODescriptor>
+<md:Organization>
+<md:OrganizationName xml:lang="pt-br">LIneA</md:OrganizationName>
+<md:OrganizationDisplayName xml:lang="pt-br">LIneA</md:OrganizationDisplayName>
+<md:OrganizationURL xml:lang="pt-br">https://linea.org.br/</md:OrganizationURL>
+</md:Organization>
+<md:ContactPerson contactType="technical">
+<md:Company>LIneA</md:Company>
+<md:GivenName>LIneA</md:GivenName>
+<md:SurName>Team</md:SurName>
+<md:EmailAddress>itteam@linea.org.br</md:EmailAddress>
+</md:ContactPerson>
+</md:EntityDescriptor>
+
+   <!--=================================================================================================================================-->
+   <!--Fim do Metadado do PZ Server de Desenvolvimento -->
+   <!--=================================================================================================================================-->
+   
+   <!--=================================================================================================================================-->
+   <!--Inicio do Metadado do localhost Dev (Singulani e Glauber)-->
+   <!--=================================================================================================================================-->
+
+<ns0:EntityDescriptor xmlns:ns0="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ns1="urn:oasis:names:tc:SAML:metadata:algsupport" xmlns:ns2="urn:oasis:names:tc:SAML:metadata:ui" xmlns:ns3="http://www.w3.org/2000/09/xmldsig#" entityID="http://localhost/saml2/metadata/">
+<ns0:Extensions>
+<ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#md5"/>
+<ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#ripemd160"/>
+<ns1:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+<ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224"/>
+<ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+<ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
+<ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
+<ns1:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
+<ns1:SigningMethod Algorithm="http://www.w3.org/2009/xmldsig11#dsa-sha256"/>
+<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha1"/>
+<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha224"/>
+<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256"/>
+<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha384"/>
+<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha512"/>
+<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-md5"/>
+<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-ripemd160"/>
+<ns1:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha224"/>
+<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/>
+<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
+</ns0:Extensions>
+<ns0:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" AuthnRequestsSigned="true" WantAssertionsSigned="true">
+<ns0:Extensions>
+<ns2:UIInfo>
+<ns2:DisplayName xml:lang="en">SP Pz</ns2:DisplayName>
+<ns2:Description xml:lang="en">Pz Service Provider Implicit</ns2:Description>
+<ns2:InformationURL xml:lang="en">http://localhost/</ns2:InformationURL>
+<ns2:PrivacyStatementURL xml:lang="en">http://localhost/</ns2:PrivacyStatementURL>
+</ns2:UIInfo>
+</ns0:Extensions>
+<ns0:KeyDescriptor use="signing">
+<ns3:KeyInfo>
+<ns3:X509Data>
+<ns3:X509Certificate>MIIC6zCCAdMCFEO8Os/m5yQ9jDBA71/epjXVJsYfMA0GCSqGSIb3DQEBCwUAMDIxCzAJBgNVBAYTAkJSMRMwEQYDVQQIDApTb21lLVN0YXRlMQ4wDAYDVQQKDAVMSW5lQTAeFw0yNDA2MDYxNDUwMDVaFw0yNTA2MDYxNDUwMDVaMDIxCzAJBgNVBAYTAkJSMRMwEQYDVQQIDApTb21lLVN0YXRlMQ4wDAYDVQQKDAVMSW5lQTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKQSx5CBe1Dl9Mq5oZA3ka/MFxeOdioZ3BvIbyqHeiBmqe2dFiNw5hrOy48rVY6JOcbZZSa/0/iNG/LTHO1ekXgUpmFBV+5huv6QSetsPkJv+cF5euC8i2j37XWiLH9tnZtzegYGacSbZDwlh2gMxTQIxtzP24LD2Qxpv7efASRLXKISfxcZzo4jfC4MFHFDHODvsOwE4HvyQJip+ZB0Uu9tDBZ6yDfq7TMQNSKkNIXtRo28ABJ/xd9rh1BuhZF+VXEP6kBclqKd6rSwoZj1VXBZ4ioG15sRLCjKd30zC5oquVuT0hzxdecnTnmmanfnCitMfv4Pfjq9U0i7IhFPvScCAwEAATANBgkqhkiG9w0BAQsFAAOCAQEABuNu5w47CXVvWH36LoJ6qcVsFi/csfsOl9lhlC6ErDm3FT7gCXdgFw+uOANs9xlGipH08GWq8rX0DsObwnBO1XBnk4BKUJn+/wLCYaHPYJnX7p4y5I1LucYoSip87LaEhAF3Y5y2Hgi+Zca4ZENOXVX1uZZz7DdObFfue3pbTGWIsfDJOI/nDsqwdRwLmD+3W5OY+iD/tPPPazdVHC/2Scqe3SsNktGEPcIS9Qw7cu+Y8WH01S00Iagor1FUiLhtyIvSTSOjTHAkpuZ5OighrJliD4M2smJm/9/VSWIFVfkvJ31asqw7R5lSutZn9tKSzDGPbRzXzpc0Ai5EtxRlGQ==</ns3:X509Certificate>
+</ns3:X509Data>
+</ns3:KeyInfo>
+</ns0:KeyDescriptor>
+<ns0:KeyDescriptor use="encryption">
+<ns3:KeyInfo>
+<ns3:X509Data>
+<ns3:X509Certificate>MIIC6zCCAdMCFEO8Os/m5yQ9jDBA71/epjXVJsYfMA0GCSqGSIb3DQEBCwUAMDIxCzAJBgNVBAYTAkJSMRMwEQYDVQQIDApTb21lLVN0YXRlMQ4wDAYDVQQKDAVMSW5lQTAeFw0yNDA2MDYxNDUwMDVaFw0yNTA2MDYxNDUwMDVaMDIxCzAJBgNVBAYTAkJSMRMwEQYDVQQIDApTb21lLVN0YXRlMQ4wDAYDVQQKDAVMSW5lQTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKQSx5CBe1Dl9Mq5oZA3ka/MFxeOdioZ3BvIbyqHeiBmqe2dFiNw5hrOy48rVY6JOcbZZSa/0/iNG/LTHO1ekXgUpmFBV+5huv6QSetsPkJv+cF5euC8i2j37XWiLH9tnZtzegYGacSbZDwlh2gMxTQIxtzP24LD2Qxpv7efASRLXKISfxcZzo4jfC4MFHFDHODvsOwE4HvyQJip+ZB0Uu9tDBZ6yDfq7TMQNSKkNIXtRo28ABJ/xd9rh1BuhZF+VXEP6kBclqKd6rSwoZj1VXBZ4ioG15sRLCjKd30zC5oquVuT0hzxdecnTnmmanfnCitMfv4Pfjq9U0i7IhFPvScCAwEAATANBgkqhkiG9w0BAQsFAAOCAQEABuNu5w47CXVvWH36LoJ6qcVsFi/csfsOl9lhlC6ErDm3FT7gCXdgFw+uOANs9xlGipH08GWq8rX0DsObwnBO1XBnk4BKUJn+/wLCYaHPYJnX7p4y5I1LucYoSip87LaEhAF3Y5y2Hgi+Zca4ZENOXVX1uZZz7DdObFfue3pbTGWIsfDJOI/nDsqwdRwLmD+3W5OY+iD/tPPPazdVHC/2Scqe3SsNktGEPcIS9Qw7cu+Y8WH01S00Iagor1FUiLhtyIvSTSOjTHAkpuZ5OighrJliD4M2smJm/9/VSWIFVfkvJ31asqw7R5lSutZn9tKSzDGPbRzXzpc0Ai5EtxRlGQ==</ns3:X509Certificate>
+</ns3:X509Data>
+</ns3:KeyInfo>
+</ns0:KeyDescriptor>
+<ns0:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="http://localhost/saml2/ls/"/>
+<ns0:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://localhost/saml2/ls/post"/>
+<ns0:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</ns0:NameIDFormat>
+<ns0:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</ns0:NameIDFormat>
+<ns0:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://localhost/saml2/acs/" index="1"/>
+</ns0:SPSSODescriptor>
+<ns0:Organization>
+<ns0:OrganizationName xml:lang="pt-br">GIdLab</ns0:OrganizationName>
+<ns0:OrganizationDisplayName xml:lang="pt-br">GIdLab</ns0:OrganizationDisplayName>
+<ns0:OrganizationURL xml:lang="pt-br">http://gidlab.rnp.br</ns0:OrganizationURL>
+</ns0:Organization>
+<ns0:ContactPerson contactType="technical">
+<ns0:Company>RNP</ns0:Company>
+<ns0:GivenName>GIdLab</ns0:GivenName>
+<ns0:SurName>Equipe</ns0:SurName>
+<ns0:EmailAddress>gidlab@rnp.br</ns0:EmailAddress>
+</ns0:ContactPerson>
+</ns0:EntityDescriptor>
+
+   <!--=================================================================================================================================-->
+   <!--Inicio do Metadado Userquery Dev (https://userquery-dev.linea.org.br/saml2/metadata/)-->
+   <!--=================================================================================================================================-->
+
+<ns0:EntityDescriptor
+	xmlns:ns0="urn:oasis:names:tc:SAML:2.0:metadata"
+	xmlns:ns1="urn:oasis:names:tc:SAML:metadata:algsupport"
+	xmlns:ns2="urn:oasis:names:tc:SAML:metadata:ui"
+	xmlns:ns3="http://www.w3.org/2000/09/xmldsig#" entityID="https://userquery-dev.linea.org.br/saml2/metadata/">
+	<ns0:Extensions>
+		<ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#md5" />
+		<ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#ripemd160" />
+		<ns1:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+		<ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224" />
+		<ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
+		<ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384" />
+		<ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2009/xmldsig11#dsa-sha256" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha1" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha224" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha384" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha512" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-md5" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-ripemd160" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha224" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512" />
+	</ns0:Extensions>
+	<ns0:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" AuthnRequestsSigned="true" WantAssertionsSigned="false">
+		<ns0:Extensions>
+			<ns2:UIInfo>
+				<ns2:DisplayName xml:lang="en">SP User Query Dev</ns2:DisplayName>
+				<ns2:Description xml:lang="en">SP User Query Dev</ns2:Description>
+				<ns2:InformationURL xml:lang="en">https://userquery-dev.linea.org.br/</ns2:InformationURL>
+				<ns2:PrivacyStatementURL xml:lang="en">https://userquery-dev.linea.org.br</ns2:PrivacyStatementURL>
+			</ns2:UIInfo>
+		</ns0:Extensions>
+		<ns0:KeyDescriptor use="signing">
+			<ns3:KeyInfo>
+				<ns3:X509Data>
+					<ns3:X509Certificate>MIIDADCCAegCCQDwrZpOF8cupjANBgkqhkiG9w0BAQsFADBCMQswCQYDVQQGEwJYWDEVMBMGA1UEBwwMRGVmYXVsdCBDaXR5MRwwGgYDVQQKDBNEZWZhdWx0IENvbXBhbnkgTHRkMB4XDTI0MDYwNzEzMzgzNloXDTI1MDYwNzEzMzgzNlowQjELMAkGA1UEBhMCWFgxFTATBgNVBAcMDERlZmF1bHQgQ2l0eTEcMBoGA1UECgwTRGVmYXVsdCBDb21wYW55IEx0ZDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAK06frhDD+QOqymonaAdN/aMYmYyP9FKcA0jLoxFFiPJimT9Gz0I+MsxHOqvGef4ATzpLU0WbmcwPqqwrahyhQZQlViE1S2ypbSlHksrIQ128zCpJZUjKpJNuQ1cauCfeH9XjfkV55j94lKmN7RohHieQQulz16igg3SBOU1tXIErPD3OPhV0NSpc+DPIhKg1P8lERWufp9yTFH+gQ3aQRIF67svM+QOGzN65MzVTpzbBNG3d9EViiCiXngrljrfjJ5oH+/XlWuphBKC+VuCGY8pYGEQN48ROc/s5bTujlBWxDl25TzheTD1EC6sK14wlEZYYu3FIoIu3ppggOEeooECAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAMnnHQVFwUoujA5tIRZamEW6Qvx0UceNdhDbd3o1pq0ADzUgOcZ6Y531/l+L8mPVigNWdQXx4w6ass4vU1ORFYsoyZ1c9PPKxnBhLQ+gajmwZDDwG4OLU3wP7Wa0mxAbYgjcHAGzaUh8sXu4mq2zMbz5l6N8R9kJQeZPhOiFyPqNRCHYrPvF7cn3LV8wPpZ01671M/FMgO/wpcP63xmqvHBlnyu953PxPJewIk6htpyaL2f4e6eIwYxxVBVqHBNBHS2l0yJwVvW8ETJGam6M9Yguh1+snoEAF8fdCXcu4P6uwJ6ceUXcCZB1WbxTirFRpnRS/ePL/xAcOTF1SClOJtw==</ns3:X509Certificate>
+				</ns3:X509Data>
+			</ns3:KeyInfo>
+		</ns0:KeyDescriptor>
+		<ns0:KeyDescriptor use="encryption">
+			<ns3:KeyInfo>
+				<ns3:X509Data>
+					<ns3:X509Certificate>MIIDADCCAegCCQDwrZpOF8cupjANBgkqhkiG9w0BAQsFADBCMQswCQYDVQQGEwJYWDEVMBMGA1UEBwwMRGVmYXVsdCBDaXR5MRwwGgYDVQQKDBNEZWZhdWx0IENvbXBhbnkgTHRkMB4XDTI0MDYwNzEzMzgzNloXDTI1MDYwNzEzMzgzNlowQjELMAkGA1UEBhMCWFgxFTATBgNVBAcMDERlZmF1bHQgQ2l0eTEcMBoGA1UECgwTRGVmYXVsdCBDb21wYW55IEx0ZDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAK06frhDD+QOqymonaAdN/aMYmYyP9FKcA0jLoxFFiPJimT9Gz0I+MsxHOqvGef4ATzpLU0WbmcwPqqwrahyhQZQlViE1S2ypbSlHksrIQ128zCpJZUjKpJNuQ1cauCfeH9XjfkV55j94lKmN7RohHieQQulz16igg3SBOU1tXIErPD3OPhV0NSpc+DPIhKg1P8lERWufp9yTFH+gQ3aQRIF67svM+QOGzN65MzVTpzbBNG3d9EViiCiXngrljrfjJ5oH+/XlWuphBKC+VuCGY8pYGEQN48ROc/s5bTujlBWxDl25TzheTD1EC6sK14wlEZYYu3FIoIu3ppggOEeooECAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAMnnHQVFwUoujA5tIRZamEW6Qvx0UceNdhDbd3o1pq0ADzUgOcZ6Y531/l+L8mPVigNWdQXx4w6ass4vU1ORFYsoyZ1c9PPKxnBhLQ+gajmwZDDwG4OLU3wP7Wa0mxAbYgjcHAGzaUh8sXu4mq2zMbz5l6N8R9kJQeZPhOiFyPqNRCHYrPvF7cn3LV8wPpZ01671M/FMgO/wpcP63xmqvHBlnyu953PxPJewIk6htpyaL2f4e6eIwYxxVBVqHBNBHS2l0yJwVvW8ETJGam6M9Yguh1+snoEAF8fdCXcu4P6uwJ6ceUXcCZB1WbxTirFRpnRS/ePL/xAcOTF1SClOJtw==</ns3:X509Certificate>
+				</ns3:X509Data>
+			</ns3:KeyInfo>
+		</ns0:KeyDescriptor>
+		<ns0:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://userquery-dev.linea.org.br/saml2/ls/" />
+		<ns0:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://userquery-dev.linea.org.br/saml2/ls/post" />
+		<ns0:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</ns0:NameIDFormat>
+		<ns0:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</ns0:NameIDFormat>
+		<ns0:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://userquery-dev.linea.org.br/saml2/acs/" index="1" />
+	</ns0:SPSSODescriptor>
+	<ns0:Organization>
+		<ns0:OrganizationName xml:lang="pt-br">GIdLab</ns0:OrganizationName>
+		<ns0:OrganizationDisplayName xml:lang="pt-br">GIdLab</ns0:OrganizationDisplayName>
+		<ns0:OrganizationURL xml:lang="pt-br">http://gidlab.rnp.br</ns0:OrganizationURL>
+	</ns0:Organization>
+	<ns0:ContactPerson contactType="technical">
+		<ns0:Company>RNP</ns0:Company>
+		<ns0:GivenName>GIdLab</ns0:GivenName>
+		<ns0:SurName>Equipe</ns0:SurName>
+		<ns0:EmailAddress>gidlab@rnp.br</ns0:EmailAddress>
+	</ns0:ContactPerson>
+</ns0:EntityDescriptor>
+
+   <!--=================================================================================================================================-->
+   <!--Fim do Metadado -->
+   <!--=================================================================================================================================-->
+
+   <!--=================================================================================================================================-->
+   <!--Inicio do Metadado PZ Server (https://pz-server-dev.linea.org.br/saml2/metadata) -->
+   <!--=================================================================================================================================-->
+   
+<ns0:EntityDescriptor
+	xmlns:ns0="urn:oasis:names:tc:SAML:2.0:metadata"
+	xmlns:ns1="urn:oasis:names:tc:SAML:metadata:algsupport"
+	xmlns:ns2="urn:oasis:names:tc:SAML:metadata:ui"
+	xmlns:ns3="http://www.w3.org/2000/09/xmldsig#" entityID="https://pz-server-dev.linea.org.br/saml2/metadata/">
+	<ns0:Extensions>
+		<ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#md5" />
+		<ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#ripemd160" />
+		<ns1:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+		<ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224" />
+		<ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
+		<ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384" />
+		<ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2009/xmldsig11#dsa-sha256" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha1" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha224" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha384" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha512" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-md5" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-ripemd160" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha224" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512" />
+	</ns0:Extensions>
+	<ns0:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" AuthnRequestsSigned="true" WantAssertionsSigned="false">
+		<ns0:Extensions>
+			<ns2:UIInfo>
+				<ns2:DisplayName xml:lang="en">SP Pz</ns2:DisplayName>
+				<ns2:Description xml:lang="en">Pz Service Provider</ns2:Description>
+				<ns2:InformationURL xml:lang="en">https://pz-server-dev.linea.org.br/about</ns2:InformationURL>
+				<ns2:PrivacyStatementURL xml:lang="en">https://pz-server-dev.linea.org.br</ns2:PrivacyStatementURL>
+			</ns2:UIInfo>
+		</ns0:Extensions>
+		<ns0:KeyDescriptor use="signing">
+			<ns3:KeyInfo>
+				<ns3:X509Data>
+					<ns3:X509Certificate>MIIDqzCCApOgAwIBAgIJAPo4vkCnBZ1/MA0GCSqGSIb3DQEBCwUAMGwxCzAJBgNVBAYTAkJSMQswCQYDVQQIDAJSSjELMAkGA1UEBwwCUkoxDjAMBgNVBAoMBUxJbmVBMQ4wDAYDVQQLDAVMSW5lQTEjMCEGA1UEAwwacHotc2VydmVyLWRldi5saW5lYS5vcmcuYnIwHhcNMjIwODE3MTIzOTUyWhcNMzIwODE0MTIzOTUyWjBsMQswCQYDVQQGEwJCUjELMAkGA1UECAwCUkoxCzAJBgNVBAcMAlJKMQ4wDAYDVQQKDAVMSW5lQTEOMAwGA1UECwwFTEluZUExIzAhBgNVBAMMGnB6LXNlcnZlci1kZXYubGluZWEub3JnLmJyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwDZLKgeYN4/dbYXiWAyaIL08JLFZQyX2uq1Pi4ucbuPw2eSJw3Cs1Ze8kXAU895cPjbg9ebiDpQHqCt/e9fK2vT2q+fN1dFkaTIM7fxq+YsvmenODAV7GQL5/2XXyKSitrJiFmvWvonRqO9rbnIbaKt1CakjdKL2oVXN5/TZ8UVJrrvlpcO99KC+ZTZdkG3vSRhbCNep38mNMtv9QDnb9IdKanwJIB1FS1GjSzy9z8s9n1FwK4Xrv/ams3tf1v2Mh2w2Zf7/UgF5JuRpY9phTbJtBi++gAZEkc/D/jB16dmGs2wV70lqZqiiCHwLJitB7eJkHgPeXiSC4XkDcl+pxQIDAQABo1AwTjAdBgNVHQ4EFgQUO7ygcHX/41kDmynHvvI0mSrLM0gwHwYDVR0jBBgwFoAUO7ygcHX/41kDmynHvvI0mSrLM0gwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAQEAHBoZ3mMJqPFvqzPt/4064vU7miytWGXLDYAimrVpchxzDSJa2ClgXzx4LTp8UYGGKrHDxph2Ynq8bSJVdwKx7XXrDSlwAOZFEhsPDxe4Kk+QMKH3971V+cAK99csk6n0dLyK/WK7Pm4F2o/NHhKiiGuRIq61gMvK/llDMVqbN5ComOrUnbl1S7/mnjf5nyY6+mq3sdz4V91Tf9p3/xDHO76wlA47NpVNAoAmajOXfSlKak+gQ71fte3JTqOsCTYuwlrClCb5fXc1Rhquv4HnYsgLmUGLNArmdEiwdIzMXIKb2cmSXchOFi8rtpXzHZCf4lZT5ufEq+j52BM/llZzbQ==</ns3:X509Certificate>
+				</ns3:X509Data>
+			</ns3:KeyInfo>
+		</ns0:KeyDescriptor>
+		<ns0:KeyDescriptor use="encryption">
+			<ns3:KeyInfo>
+				<ns3:X509Data>
+					<ns3:X509Certificate>MIIDqzCCApOgAwIBAgIJAPo4vkCnBZ1/MA0GCSqGSIb3DQEBCwUAMGwxCzAJBgNVBAYTAkJSMQswCQYDVQQIDAJSSjELMAkGA1UEBwwCUkoxDjAMBgNVBAoMBUxJbmVBMQ4wDAYDVQQLDAVMSW5lQTEjMCEGA1UEAwwacHotc2VydmVyLWRldi5saW5lYS5vcmcuYnIwHhcNMjIwODE3MTIzOTUyWhcNMzIwODE0MTIzOTUyWjBsMQswCQYDVQQGEwJCUjELMAkGA1UECAwCUkoxCzAJBgNVBAcMAlJKMQ4wDAYDVQQKDAVMSW5lQTEOMAwGA1UECwwFTEluZUExIzAhBgNVBAMMGnB6LXNlcnZlci1kZXYubGluZWEub3JnLmJyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwDZLKgeYN4/dbYXiWAyaIL08JLFZQyX2uq1Pi4ucbuPw2eSJw3Cs1Ze8kXAU895cPjbg9ebiDpQHqCt/e9fK2vT2q+fN1dFkaTIM7fxq+YsvmenODAV7GQL5/2XXyKSitrJiFmvWvonRqO9rbnIbaKt1CakjdKL2oVXN5/TZ8UVJrrvlpcO99KC+ZTZdkG3vSRhbCNep38mNMtv9QDnb9IdKanwJIB1FS1GjSzy9z8s9n1FwK4Xrv/ams3tf1v2Mh2w2Zf7/UgF5JuRpY9phTbJtBi++gAZEkc/D/jB16dmGs2wV70lqZqiiCHwLJitB7eJkHgPeXiSC4XkDcl+pxQIDAQABo1AwTjAdBgNVHQ4EFgQUO7ygcHX/41kDmynHvvI0mSrLM0gwHwYDVR0jBBgwFoAUO7ygcHX/41kDmynHvvI0mSrLM0gwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAQEAHBoZ3mMJqPFvqzPt/4064vU7miytWGXLDYAimrVpchxzDSJa2ClgXzx4LTp8UYGGKrHDxph2Ynq8bSJVdwKx7XXrDSlwAOZFEhsPDxe4Kk+QMKH3971V+cAK99csk6n0dLyK/WK7Pm4F2o/NHhKiiGuRIq61gMvK/llDMVqbN5ComOrUnbl1S7/mnjf5nyY6+mq3sdz4V91Tf9p3/xDHO76wlA47NpVNAoAmajOXfSlKak+gQ71fte3JTqOsCTYuwlrClCb5fXc1Rhquv4HnYsgLmUGLNArmdEiwdIzMXIKb2cmSXchOFi8rtpXzHZCf4lZT5ufEq+j52BM/llZzbQ==</ns3:X509Certificate>
+				</ns3:X509Data>
+			</ns3:KeyInfo>
+		</ns0:KeyDescriptor>
+		<ns0:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://pz-server-dev.linea.org.br/saml2/ls/" />
+		<ns0:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://pz-server-dev.linea.org.br/saml2/ls/post" />
+		<ns0:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</ns0:NameIDFormat>
+		<ns0:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</ns0:NameIDFormat>
+		<ns0:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://pz-server-dev.linea.org.br/saml2/acs/" index="1" />
+	</ns0:SPSSODescriptor>
+	<ns0:Organization>
+		<ns0:OrganizationName xml:lang="pt-br">LIneA</ns0:OrganizationName>
+		<ns0:OrganizationDisplayName xml:lang="pt-br">LIneA</ns0:OrganizationDisplayName>
+		<ns0:OrganizationURL xml:lang="pt-br">https://linea.org.br/</ns0:OrganizationURL>
+	</ns0:Organization>
+	<ns0:ContactPerson contactType="technical">
+		<ns0:Company>LIneA</ns0:Company>
+		<ns0:GivenName>LIneA</ns0:GivenName>
+		<ns0:SurName>Team</ns0:SurName>
+		<ns0:EmailAddress>itteam@linea.org.br</ns0:EmailAddress>
+	</ns0:ContactPerson>
+</ns0:EntityDescriptor>
+
+   <!--=================================================================================================================================-->
+   <!--Fim do Metadado -->
+   <!--=================================================================================================================================-->
+
+
+   <!--=================================================================================================================================-->
+   <!--Inicio do Metadado Target Viewer (https://targetviewer-dev.linea.org.br/saml2/metadata) -->
+   <!--=================================================================================================================================-->
+
+<ns0:EntityDescriptor
+	xmlns:ns0="urn:oasis:names:tc:SAML:2.0:metadata"
+	xmlns:ns1="urn:oasis:names:tc:SAML:metadata:algsupport"
+	xmlns:ns2="urn:oasis:names:tc:SAML:metadata:ui"
+	xmlns:ns3="http://www.w3.org/2000/09/xmldsig#" entityID="https://targetviewer-dev.linea.org.br/saml2/metadata/">
+	<ns0:Extensions>
+		<ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#md5" />
+		<ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#ripemd160" />
+		<ns1:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+		<ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224" />
+		<ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
+		<ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384" />
+		<ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2009/xmldsig11#dsa-sha256" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha1" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha224" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha384" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha512" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-md5" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-ripemd160" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha224" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512" />
+	</ns0:Extensions>
+	<ns0:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" AuthnRequestsSigned="true" WantAssertionsSigned="false">
+		<ns0:Extensions>
+			<ns2:UIInfo>
+				<ns2:DisplayName xml:lang="en">SP Target Viewer</ns2:DisplayName>
+				<ns2:Description xml:lang="en">SP Target Viewer</ns2:Description>
+				<ns2:InformationURL xml:lang="en">https://targetviewer-dev.linea.org.br</ns2:InformationURL>
+				<ns2:PrivacyStatementURL xml:lang="en">https://targetviewer-dev.linea.org.br</ns2:PrivacyStatementURL>
+			</ns2:UIInfo>
+		</ns0:Extensions>
+		<ns0:KeyDescriptor use="signing">
+			<ns3:KeyInfo>
+				<ns3:X509Data>
+					<ns3:X509Certificate>MIIDTjCCAjYCCQCE0WzIeLHS2TANBgkqhkiG9w0BAQsFADBpMQswCQYDVQQGEwJCUjELMAkGA1UECAwCUkoxFTATBgNVBAcMDERlZmF1bHQgQ2l0eTEOMAwGA1UECgwFTEluZUExJjAkBgNVBAMMHXRhcmdldHZpZXdlci1kZXYubGluZWEub3JnLmJyMB4XDTI1MDIwNTIzMDkzMVoXDTI2MDIwNTIzMDkzMVowaTELMAkGA1UEBhMCQlIxCzAJBgNVBAgMAlJKMRUwEwYDVQQHDAxEZWZhdWx0IENpdHkxDjAMBgNVBAoMBUxJbmVBMSYwJAYDVQQDDB10YXJnZXR2aWV3ZXItZGV2LmxpbmVhLm9yZy5icjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALw68MIaISgrkfRdZ2w8CemcuQC+nr/rt5paza8Nu/TbVOdFmu6V+1T4nmOv6ciOACd6C2rrYuXs4Zfkfq/oCNeezObSjFvKGY7PStCl46v3F6vFt28UHlRb37eVx1GYCTp9NPjZJqtQNkvzn6Zii1+J5QJwHYGwVddFwawxF5xu78XEl38N197hhQJBA7tkcV9rGQIN5XpcIyftpO6O+2IxaaY9GCAtNWgGo0WburIy5sY0nXDUF7O9VZx3phJq/2sBJStX5uo8XosxswFqeBgQoEBUvSqyiE1L7Upj8T5M5OZza31+g6CzQ5KzMUHEkc+ZDbPQ5n8zOoo8tNDSrtsCAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAUeMQGKfd0HQZuf63N2quL7MjFARnbIm4n0pKo9sTZiEnDgt+NJcN6mkQDV5FcumUCDWAKOclGwBdCqbZk16H9SehOeVPfGr3vZ97M17tlGVYFEqOeuIIUulPwXSx5I02BGhLAzFBnxQxOevVMaNimmVaCQtrMXP+yD41vUUcuAF7VoAd+Ar0wNxdrjWEF7piklBGPsfrrnEoi2LfEzxmks1LFfvZr6KW2X9gTsu51chaCEkft3GoNFoVk6qxAWPCzWSWOfLpYSZtNIuGCDV7aSK8UCxRPGSLJwPvJY0wfzEaDG9f/K8Zv8Ut6Oxhb4dy+uBWtYNQmzNH8UrMMIQe1g==</ns3:X509Certificate>
+				</ns3:X509Data>
+			</ns3:KeyInfo>
+		</ns0:KeyDescriptor>
+		<ns0:KeyDescriptor use="encryption">
+			<ns3:KeyInfo>
+				<ns3:X509Data>
+					<ns3:X509Certificate>MIIDTjCCAjYCCQCE0WzIeLHS2TANBgkqhkiG9w0BAQsFADBpMQswCQYDVQQGEwJCUjELMAkGA1UECAwCUkoxFTATBgNVBAcMDERlZmF1bHQgQ2l0eTEOMAwGA1UECgwFTEluZUExJjAkBgNVBAMMHXRhcmdldHZpZXdlci1kZXYubGluZWEub3JnLmJyMB4XDTI1MDIwNTIzMDkzMVoXDTI2MDIwNTIzMDkzMVowaTELMAkGA1UEBhMCQlIxCzAJBgNVBAgMAlJKMRUwEwYDVQQHDAxEZWZhdWx0IENpdHkxDjAMBgNVBAoMBUxJbmVBMSYwJAYDVQQDDB10YXJnZXR2aWV3ZXItZGV2LmxpbmVhLm9yZy5icjCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALw68MIaISgrkfRdZ2w8CemcuQC+nr/rt5paza8Nu/TbVOdFmu6V+1T4nmOv6ciOACd6C2rrYuXs4Zfkfq/oCNeezObSjFvKGY7PStCl46v3F6vFt28UHlRb37eVx1GYCTp9NPjZJqtQNkvzn6Zii1+J5QJwHYGwVddFwawxF5xu78XEl38N197hhQJBA7tkcV9rGQIN5XpcIyftpO6O+2IxaaY9GCAtNWgGo0WburIy5sY0nXDUF7O9VZx3phJq/2sBJStX5uo8XosxswFqeBgQoEBUvSqyiE1L7Upj8T5M5OZza31+g6CzQ5KzMUHEkc+ZDbPQ5n8zOoo8tNDSrtsCAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAUeMQGKfd0HQZuf63N2quL7MjFARnbIm4n0pKo9sTZiEnDgt+NJcN6mkQDV5FcumUCDWAKOclGwBdCqbZk16H9SehOeVPfGr3vZ97M17tlGVYFEqOeuIIUulPwXSx5I02BGhLAzFBnxQxOevVMaNimmVaCQtrMXP+yD41vUUcuAF7VoAd+Ar0wNxdrjWEF7piklBGPsfrrnEoi2LfEzxmks1LFfvZr6KW2X9gTsu51chaCEkft3GoNFoVk6qxAWPCzWSWOfLpYSZtNIuGCDV7aSK8UCxRPGSLJwPvJY0wfzEaDG9f/K8Zv8Ut6Oxhb4dy+uBWtYNQmzNH8UrMMIQe1g==</ns3:X509Certificate>
+				</ns3:X509Data>
+			</ns3:KeyInfo>
+		</ns0:KeyDescriptor>
+		<ns0:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://targetviewer-dev.linea.org.br/saml2/ls/" />
+		<ns0:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://targetviewer-dev.linea.org.br/saml2/ls/post" />
+		<ns0:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</ns0:NameIDFormat>
+		<ns0:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</ns0:NameIDFormat>
+		<ns0:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://targetviewer-dev.linea.org.br/saml2/acs/" index="1" />
+	</ns0:SPSSODescriptor>
+	<ns0:Organization>
+		<ns0:OrganizationName xml:lang="pt-br">LIneA</ns0:OrganizationName>
+		<ns0:OrganizationDisplayName xml:lang="pt-br">LIneA</ns0:OrganizationDisplayName>
+		<ns0:OrganizationURL xml:lang="pt-br">https://www.linea.org.br</ns0:OrganizationURL>
+	</ns0:Organization>
+	<ns0:ContactPerson contactType="technical">
+		<ns0:Company>LIneA</ns0:Company>
+		<ns0:GivenName>Service</ns0:GivenName>
+		<ns0:SurName>Desk</ns0:SurName>
+		<ns0:EmailAddress>helpdesk@linea.org.br</ns0:EmailAddress>
+	</ns0:ContactPerson>
+</ns0:EntityDescriptor>   
+   <!--=================================================================================================================================-->
+   <!--Fim do Metadado -->
+   <!--=================================================================================================================================-->
+
+
+   <!--=================================================================================================================================-->
+   <!--Inicio do Metadado Register-dev2 (https://register-dev2.linea.org.br/Shibboleth.sso/Metadata) -->
+   <!--=================================================================================================================================-->
+
+<md:EntityDescriptor xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata" ID="_3426e901a70a5e5e6cf1a8907ab40421577ad4d0" entityID="https://register-dev2.linea.org.br/shibboleth">
+
+  <md:Extensions xmlns:alg="urn:oasis:names:tc:SAML:metadata:algsupport">
+    <mdattr:EntityAttributes xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute">
+                        <saml:Attribute xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" Name="http://macedir.org/entity-category" NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:uri">
+                        <saml:AttributeValue>http://refeds.org/category/research-and-scholarship</saml:AttributeValue>
+                        </saml:Attribute>
+                </mdattr:EntityAttributes><alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224"/>
+    <alg:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha512"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha384"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha224"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2009/xmldsig11#dsa-sha256"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha1"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+    <alg:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
+  </md:Extensions>
+
+  <md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <md:Extensions>
+      <mdui:UIInfo xmlns:mdui="urn:oasis:names:tc:SAML:metadata:ui">
+                	<mdui:DisplayName xml:lang="en">ServiceDisplayName</mdui:DisplayName>
+                	<mdui:Description xml:lang="en">ServiceDescription</mdui:Description>
+		        </mdui:UIInfo><init:RequestInitiator xmlns:init="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Binding="urn:oasis:names:tc:SAML:profiles:SSO:request-init" Location="https://register-dev2.linea.org.br/Shibboleth.sso/Login"/>
+      <idpdisc:DiscoveryResponse xmlns:idpdisc="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Binding="urn:oasis:names:tc:SAML:profiles:SSO:idp-discovery-protocol" Location="https://register-dev2.linea.org.br/Shibboleth.sso/Login" index="1"/>
+    </md:Extensions>
+    <md:KeyDescriptor use="signing">
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:KeyName>https://register.linea.org.br/shibboleth</ds:KeyName>
+        <ds:KeyName>register.linea.org.br</ds:KeyName>
+        <ds:X509Data>
+          <ds:X509SubjectName>CN=register.linea.org.br</ds:X509SubjectName>
+          <ds:X509Certificate>MIIEMDCCApigAwIBAgIJAOFMKBcOkYKVMA0GCSqGSIb3DQEBCwUAMCAxHjAcBgNV
+BAMTFXJlZ2lzdGVyLmxpbmVhLm9yZy5icjAeFw0yNDA0MTIyMDIzMTBaFw0yNzA0
+MTMyMDIzMTBaMCAxHjAcBgNVBAMTFXJlZ2lzdGVyLmxpbmVhLm9yZy5icjCCAaIw
+DQYJKoZIhvcNAQEBBQADggGPADCCAYoCggGBAN84S4cuYApJYoZtgR5bizohBkuj
+51RQL0apmvcbPnVbrmZzNGt80A6qMD3plJofVCEP95ZR/gkiXw23vRe5J7LnU8lI
+SaHi2brOBokUReji05aUAsHd9cS6rNntSi6RN4CwtqlZszFF8ZjFJ1Os1iV+0x6W
+JI0P4d0b0iyIRMC+CVKcMIblydiVGLfiPwFlQ0bkliQ0+kJwvTkoLoIo+Vgn1WOe
+TKv7DKEcLKnmmX4sZn5J3P1fZj++HkUO1DkRvtl/xRLlauE+HVl9Buel0HhQEbRh
+E2GGVBbfa3+F3bP1sN82tQ/T1/qlojGTULrVa4Kkd4vLePr4/zOrveB9AMiVNtrX
+AXg2ZIqYoPkCS6tG7HTdxvm81gTiI0mf1PdvvC8rgNSbpg/17t9fq9lC+NVGaco6
+zUiyV67GHJW9rJBH58YIZEaHDkIxGZb4ompT86j3JaOfbzFWV3YjngiGOHdMnz1R
+p4ZY3HxmsCMhaRMzfdHUlQV3xu1nZ/3YymxkYQIDAQABo20wazBKBgNVHREEQzBB
+ghVyZWdpc3Rlci5saW5lYS5vcmcuYnKGKGh0dHBzOi8vcmVnaXN0ZXIubGluZWEu
+b3JnLmJyL3NoaWJib2xldGgwHQYDVR0OBBYEFKPCOxVDsLD4JmZJm5ODSxUx9e8T
+MA0GCSqGSIb3DQEBCwUAA4IBgQBJJiMQvElUEnKd0MBVLcfnAC1pxAzDsfEZciMr
+nfIuxP51EgASjhN279Fjx7UF+DZE2fyLac5dU07s70i/jmBHuqGNDN7YPZk3qUdi
+kZJq4KNGkCIbCfXEynW2HpyQYjAs/ZwmMsDpllMLl24apHPu3fwm8h2Mi5egT7o2
+35U+m4IE/kL718VpUkRFa8Xx/yM6C1+Y5ksGLokKgfM868MfrVAwqFJEvsEQLru1
+9d4vyw8AtxuEGdUXkmNBgNDZYHOdntcTm1C9PBzrffYIpm98KgXTAr6vKksOJ25k
+mRvQREmvQc+1bXD20ovwUKWE8rp79LGg7+4jdDEOVUk9DdA/y89kG95xUrrYJr11
+AHBx2owcHNjOIdlaDgWHRbX89F3rNUIoSgIBUXndmPiNi/SXCIn+zy7xiXyWCbZ3
+qkCWy80Uq3ugdkmXgyws0wGinIDJ9Ldr47O8iVsBhFclb3mGbCTOnPmdNFkxJEGJ
+iAfGfx/S0EhkY60ryYZ+DRnXd84=
+</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </md:KeyDescriptor>
+    <md:KeyDescriptor use="encryption">
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:KeyName>https://register.linea.org.br/shibboleth</ds:KeyName>
+        <ds:KeyName>register.linea.org.br</ds:KeyName>
+        <ds:X509Data>
+          <ds:X509SubjectName>CN=register.linea.org.br</ds:X509SubjectName>
+          <ds:X509Certificate>MIIEMDCCApigAwIBAgIJAOFMKBcOkYKVMA0GCSqGSIb3DQEBCwUAMCAxHjAcBgNV
+BAMTFXJlZ2lzdGVyLmxpbmVhLm9yZy5icjAeFw0yNDA0MTIyMDIzMTBaFw0yNzA0
+MTMyMDIzMTBaMCAxHjAcBgNVBAMTFXJlZ2lzdGVyLmxpbmVhLm9yZy5icjCCAaIw
+DQYJKoZIhvcNAQEBBQADggGPADCCAYoCggGBAN84S4cuYApJYoZtgR5bizohBkuj
+51RQL0apmvcbPnVbrmZzNGt80A6qMD3plJofVCEP95ZR/gkiXw23vRe5J7LnU8lI
+SaHi2brOBokUReji05aUAsHd9cS6rNntSi6RN4CwtqlZszFF8ZjFJ1Os1iV+0x6W
+JI0P4d0b0iyIRMC+CVKcMIblydiVGLfiPwFlQ0bkliQ0+kJwvTkoLoIo+Vgn1WOe
+TKv7DKEcLKnmmX4sZn5J3P1fZj++HkUO1DkRvtl/xRLlauE+HVl9Buel0HhQEbRh
+E2GGVBbfa3+F3bP1sN82tQ/T1/qlojGTULrVa4Kkd4vLePr4/zOrveB9AMiVNtrX
+AXg2ZIqYoPkCS6tG7HTdxvm81gTiI0mf1PdvvC8rgNSbpg/17t9fq9lC+NVGaco6
+zUiyV67GHJW9rJBH58YIZEaHDkIxGZb4ompT86j3JaOfbzFWV3YjngiGOHdMnz1R
+p4ZY3HxmsCMhaRMzfdHUlQV3xu1nZ/3YymxkYQIDAQABo20wazBKBgNVHREEQzBB
+ghVyZWdpc3Rlci5saW5lYS5vcmcuYnKGKGh0dHBzOi8vcmVnaXN0ZXIubGluZWEu
+b3JnLmJyL3NoaWJib2xldGgwHQYDVR0OBBYEFKPCOxVDsLD4JmZJm5ODSxUx9e8T
+MA0GCSqGSIb3DQEBCwUAA4IBgQBJJiMQvElUEnKd0MBVLcfnAC1pxAzDsfEZciMr
+nfIuxP51EgASjhN279Fjx7UF+DZE2fyLac5dU07s70i/jmBHuqGNDN7YPZk3qUdi
+kZJq4KNGkCIbCfXEynW2HpyQYjAs/ZwmMsDpllMLl24apHPu3fwm8h2Mi5egT7o2
+35U+m4IE/kL718VpUkRFa8Xx/yM6C1+Y5ksGLokKgfM868MfrVAwqFJEvsEQLru1
+9d4vyw8AtxuEGdUXkmNBgNDZYHOdntcTm1C9PBzrffYIpm98KgXTAr6vKksOJ25k
+mRvQREmvQc+1bXD20ovwUKWE8rp79LGg7+4jdDEOVUk9DdA/y89kG95xUrrYJr11
+AHBx2owcHNjOIdlaDgWHRbX89F3rNUIoSgIBUXndmPiNi/SXCIn+zy7xiXyWCbZ3
+qkCWy80Uq3ugdkmXgyws0wGinIDJ9Ldr47O8iVsBhFclb3mGbCTOnPmdNFkxJEGJ
+iAfGfx/S0EhkY60ryYZ+DRnXd84=
+</ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes128-gcm"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes192-gcm"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#aes256-gcm"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes192-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes256-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#tripledes-cbc"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2009/xmlenc11#rsa-oaep"/>
+      <md:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-oaep-mgf1p"/>
+    </md:KeyDescriptor>
+    <md:ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://register-dev2.linea.org.br/Shibboleth.sso/Artifact/SOAP" index="1"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://register-dev2.linea.org.br/Shibboleth.sso/SLO/SOAP"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://register-dev2.linea.org.br/Shibboleth.sso/SLO/Redirect"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://register-dev2.linea.org.br/Shibboleth.sso/SLO/POST"/>
+    <md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://register-dev2.linea.org.br/Shibboleth.sso/SLO/Artifact"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://register-dev2.linea.org.br/Shibboleth.sso/SAML2/POST" index="1"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://register-dev2.linea.org.br/Shibboleth.sso/SAML2/POST-SimpleSign" index="2"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="https://register-dev2.linea.org.br/Shibboleth.sso/SAML2/Artifact" index="3"/>
+    <md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:PAOS" Location="https://register-dev2.linea.org.br/Shibboleth.sso/SAML2/ECP" index="4"/>
+  </md:SPSSODescriptor>
+
+  <md:ContactPerson contactType="support">
+                        <md:GivenName>Carlos</md:GivenName>
+                        <md:SurName>Adean</md:SurName>
+                        <md:EmailAddress>helpdesk@linea.org.br</md:EmailAddress>
+                </md:ContactPerson>
+</md:EntityDescriptor>
+
+   <!--=================================================================================================================================-->
+   <!--Fim do Metadado  Register-dev2 (https://register-dev2.linea.org.br/Shibboleth.sso/Metadata) -->
+   <!--=================================================================================================================================-->
+
+   <!--=================================================================================================================================-->
+   <!--Fim do Metadado -->
+   <!--=================================================================================================================================-->
+</EntitiesDescriptor>

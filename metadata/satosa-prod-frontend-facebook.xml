@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<ns0:EntityDescriptor
+	xmlns:ns0="urn:oasis:names:tc:SAML:2.0:metadata"
+	xmlns:ns1="http://www.w3.org/2000/09/xmldsig#"
+	xmlns:ns2="urn:oasis:names:tc:SAML:metadata:ui" entityID="https://satosa.linea.org.br/linea/proxy/aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL2RpYWxvZy9vYXV0aA==" ID="id-gGGaiqR05irTEKQsS">
+	<ns1:Signature Id="Signature1">
+		<ns1:SignedInfo>
+			<ns1:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+			<ns1:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+			<ns1:Reference URI="#id-gGGaiqR05irTEKQsS">
+				<ns1:Transforms>
+					<ns1:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+					<ns1:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+				</ns1:Transforms>
+				<ns1:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+				<ns1:DigestValue>lTBfsPqCpg2TBSNUS2Yzc2NNOfk=</ns1:DigestValue>
+			</ns1:Reference>
+		</ns1:SignedInfo>
+		<ns1:SignatureValue>CL/yQ3KwHP5EOjoNbowcBGNqu1Gh/eu+l2oRg5sQ7ll+wgwKug3+c5wHYJS5cJOK
+fWfvkx2EThdttIP8I/+JT4XqxZcrOw8r1iBayHxwRCRr1lEM959OgaspVe1EsP0g
+PMo0AQMK6sicz4HpDBJ7EcLZZNkb/h0fyaKB2ZF2MrPIfVoYw0hnhO8a2bhWbfsq
+6oKupJmZn4fnVSB68wKGWyjXyjs534doldQ7H9l4I8yFk/tjwyCgv9dLKVQv0eGw
+QLNUnKAfok3NY1rObsBYtfg6+u3IdAT65mfAQAJJgtWc7jVoO2AlWpvuKy99+HaM
+NXeD7f+20zcpB897Ge2e8A==</ns1:SignatureValue>
+		<ns1:KeyInfo>
+			<ns1:X509Data>
+				<ns1:X509Certificate>MIIDDzCCAfegAwIBAgIJAPo6Qry4Q61jMA0GCSqGSIb3DQEBCwUAMB4xHDAaBgNVBAMME3NhdG9zYS5saW5lYS5nb3YuYnIwHhcNMjEwMzE5MDE0ODE2WhcNMzEwMzE3MDE0ODE2WjAeMRwwGgYDVQQDDBNzYXRvc2EubGluZWEuZ292LmJyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2IlErDfBdog0+qT+CjNjQO7tcd67uvPpkxC80edsohqJ98SkUH3GUD8gM+0H0Mtgj51ua6oUeIeYMD2kyc2gqyaXlcizPqDKwwuj3G7rgK/0KSHRJcl2dAVvYAaeGQ0sgs4sgpGeZhPTGbNLvQmOa7E/c8mXmOuBEJjYFwJ68m2bfJagIBjJYEaSAWKBJFeW7uVf+ooT9VYAuP9QOlmL8YaMbc0XUrGZ6M2O+ie09xxk8cwLVREreV4Ac4E+wfrfKka9DbugnthBVJYEcnlnrLzhFXkMxNwap3QUC7ih8x6GGNAoFyAVV3LEjZvg2pBYX5NxPrNQLlMdMflYorm/AwIDAQABo1AwTjAdBgNVHQ4EFgQUVp++kCgyEImPtbdcIs509YHqcNMwHwYDVR0jBBgwFoAUVp++kCgyEImPtbdcIs509YHqcNMwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAQEAfbYE/Fc51KS4FjR7DgnT9W1iETdzLRtWbBg3xxW7XWxLtUDD0j0+n2iHKXDjqMSTZI0vWqrob6ns85VE/hnkWfR84EOM+Dg1XhEVjAjF5sHc0xtcMsFDf46yqVeEATiU3dxzWRzh8c/8qxPdMU1Tf0jWfYtJ3FPiQBd5WqgxW01EK6VSvoZ/toAq3uDxO3aTCWsFWX63YIvPf5uNmHYAhXnEUVAO3wVZ84ETxCno3+35eg7O2KYzM1ljKogMtXiZoSWJ5C4G7nEcZeElx+oCB2iFc76Uk93ZTiXmpmTJutxhTB4vsg52dvOzpkA0gj8lDKy7TeDDbLS1/HGXN6MjsQ==</ns1:X509Certificate>
+			</ns1:X509Data>
+		</ns1:KeyInfo>
+	</ns1:Signature>
+	<ns0:IDPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" WantAuthnRequestsSigned="false">
+		<ns0:Extensions>
+			<ns2:UIInfo>
+				<ns2:DisplayName xml:lang="en">Facebook</ns2:DisplayName>
+				<ns2:Description xml:lang="en">Facebook oauth</ns2:Description>
+				<ns2:Keywords xml:lang="se">Satosa IdP-SE</ns2:Keywords>
+				<ns2:Keywords xml:lang="en">Satosa IdP-EN</ns2:Keywords>
+				<ns2:Logo height="100" width="100">http://idp.logo.url/</ns2:Logo>
+				<ns2:InformationURL xml:lang="en">http://idp.information.url/</ns2:InformationURL>
+				<ns2:PrivacyStatementURL xml:lang="en">http://idp.privacy.url/</ns2:PrivacyStatementURL>
+			</ns2:UIInfo>
+		</ns0:Extensions>
+		<ns0:KeyDescriptor use="signing">
+			<ns1:KeyInfo>
+				<ns1:X509Data>
+					<ns1:X509Certificate>MIIDDzCCAfegAwIBAgIJAPo6Qry4Q61jMA0GCSqGSIb3DQEBCwUAMB4xHDAaBgNVBAMME3NhdG9zYS5saW5lYS5nb3YuYnIwHhcNMjEwMzE5MDE0ODE2WhcNMzEwMzE3MDE0ODE2WjAeMRwwGgYDVQQDDBNzYXRvc2EubGluZWEuZ292LmJyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2IlErDfBdog0+qT+CjNjQO7tcd67uvPpkxC80edsohqJ98SkUH3GUD8gM+0H0Mtgj51ua6oUeIeYMD2kyc2gqyaXlcizPqDKwwuj3G7rgK/0KSHRJcl2dAVvYAaeGQ0sgs4sgpGeZhPTGbNLvQmOa7E/c8mXmOuBEJjYFwJ68m2bfJagIBjJYEaSAWKBJFeW7uVf+ooT9VYAuP9QOlmL8YaMbc0XUrGZ6M2O+ie09xxk8cwLVREreV4Ac4E+wfrfKka9DbugnthBVJYEcnlnrLzhFXkMxNwap3QUC7ih8x6GGNAoFyAVV3LEjZvg2pBYX5NxPrNQLlMdMflYorm/AwIDAQABo1AwTjAdBgNVHQ4EFgQUVp++kCgyEImPtbdcIs509YHqcNMwHwYDVR0jBBgwFoAUVp++kCgyEImPtbdcIs509YHqcNMwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAQEAfbYE/Fc51KS4FjR7DgnT9W1iETdzLRtWbBg3xxW7XWxLtUDD0j0+n2iHKXDjqMSTZI0vWqrob6ns85VE/hnkWfR84EOM+Dg1XhEVjAjF5sHc0xtcMsFDf46yqVeEATiU3dxzWRzh8c/8qxPdMU1Tf0jWfYtJ3FPiQBd5WqgxW01EK6VSvoZ/toAq3uDxO3aTCWsFWX63YIvPf5uNmHYAhXnEUVAO3wVZ84ETxCno3+35eg7O2KYzM1ljKogMtXiZoSWJ5C4G7nEcZeElx+oCB2iFc76Uk93ZTiXmpmTJutxhTB4vsg52dvOzpkA0gj8lDKy7TeDDbLS1/HGXN6MjsQ==</ns1:X509Certificate>
+				</ns1:X509Data>
+			</ns1:KeyInfo>
+		</ns0:KeyDescriptor>
+		<ns0:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</ns0:NameIDFormat>
+		<ns0:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</ns0:NameIDFormat>
+		<ns0:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://satosa.linea.org.br/facebook/aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL2RpYWxvZy9vYXV0aA==/sso/post"/>
+		<ns0:SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://satosa.linea.org.br/facebook/aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL2RpYWxvZy9vYXV0aA==/sso/redirect"/>
+	</ns0:IDPSSODescriptor>
+	<ns0:Organization>
+		<ns0:OrganizationName xml:lang="en">LIneA.</ns0:OrganizationName>
+		<ns0:OrganizationDisplayName xml:lang="en">LIneA</ns0:OrganizationDisplayName>
+		<ns0:OrganizationURL xml:lang="en">http://www.linea.org.br</ns0:OrganizationURL>
+	</ns0:Organization>
+	<ns0:ContactPerson contactType="technical">
+		<ns0:GivenName>Technical</ns0:GivenName>
+		<ns0:EmailAddress>carlosadean@linea.org.br</ns0:EmailAddress>
+	</ns0:ContactPerson>
+	<ns0:ContactPerson contactType="support">
+		<ns0:GivenName>Support</ns0:GivenName>
+		<ns0:EmailAddress>helpdesk@linea.org.br</ns0:EmailAddress>
+	</ns0:ContactPerson>
+</ns0:EntityDescriptor>

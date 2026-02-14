@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="shortcut icon" type="imagex/png" href="images/favicon.png">
+  </head>
+
+  <body class="container">
+    <div class="card">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="logo">
+            <img src="images/linea-logo.png" alt="LIneA Logo" />
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card-header">
+            <h3 style="margin-bottom: 0px; margin-top: 2.3rem;"> Welcome to </h3>
+            <h3 id="edsTitle"></h3>
+          </div>
+
+          <!---div class="MuiFormControl-root">
+            <a href="javascript:void(0);" onclick="window.location.href = config.generateLoginUrl('cafe');" class="btn btn-cafe">
+              <div class="cafe-icon-wrapper">
+                <img class="cafe-icon" src="/eds/images/cafe_logo.png" />
+              </div>
+              <span>Login with CAFe</span>
+            </a>
+          </div-->
+        
+          <div class="MuiFormControl-root" >
+            <a href="javascript:void(0);" onclick="window.location.href = config.generateLoginUrl('rubin');" class="btn btn-cilogon">
+              <div class="cilogon-icon-wrapper">
+                <img class="cilogon-icon" src="images/cilogon_logo.png" />
+              </div>
+              <span style="margin-left: 1rem;">LSST Members (RSP Account)</span>
+            </a>
+          </div>
+
+          <div class="MuiFormControl-root" >
+            <a href="javascript:void(0);" onclick="window.location.href = config.generateLoginUrl('cilogon');" class="btn btn-cilogon">
+              <div class="cilogon-icon-wrapper">
+                <img class="cilogon-icon" src="images/cilogon_logo.png" />
+              </div>
+              <span style="margin-left: 1rem;">General Public</span>
+            </a>
+          </div>
+
+          <!--div class="MuiFormControl-root" style="margin-bottom: 5px;">
+            <a href="javascript:void(0);" onclick="window.location.href = config.generateLoginUrl('google');" class="btn btn-cilogon">
+              <div class="cilogon-icon-wrapper">
+                <img class="cilogon-icon" src="/eds/images/google_logo.png" />
+              </div>
+              <span>Login with Google</span>
+            </a>
+          </div-->
+
+          <p class="new-user">
+            New user? <a href="https://docs.linea.org.br/primeiros_passos.html" target="_blank" style="color: #095ce0;">Register here</a>.
+          </p>
+        </div>
+      </div>
+
+      <div class="terms-and-info">
+        <p style="color: #283661; margin-top: 2rem; margin-bottom: 0rem; text-align: center;">
+          Any problem authenticating or registering? <a href="mailto:helpdesk@linea.org.br" target="_blank">Contact our helpdesk</a>.
+        </p>
+      </div>
+    </div>
+    
+    <script src="config.js"></script>
+  </body>
+</html>
