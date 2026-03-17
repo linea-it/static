@@ -2149,6 +2149,84 @@ iAfGfx/S0EhkY60ryYZ+DRnXd84=
    <!--=================================================================================================================================-->
 
    <!--=================================================================================================================================-->
+   <!--Inicio do Metadado do Canvas Dev (https://canvas-dev.linea.org.br/saml2/metadata/)  -->
+   <!--=================================================================================================================================-->
+<ns0:EntityDescriptor
+	xmlns:ns0="urn:oasis:names:tc:SAML:2.0:metadata"
+	xmlns:ns1="urn:oasis:names:tc:SAML:metadata:algsupport"
+	xmlns:ns2="urn:oasis:names:tc:SAML:metadata:ui"
+	xmlns:ns3="http://www.w3.org/2000/09/xmldsig#" entityID="https://canvas-dev.linea.org.br/saml2/metadata/">
+	<ns0:Extensions>
+		<ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#md5"/>
+		<ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#ripemd160"/>
+		<ns1:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+		<ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224"/>
+		<ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+		<ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
+		<ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2009/xmldsig11#dsa-sha256"/>
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha1"/>
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha224"/>
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256"/>
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha384"/>
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha512"/>
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-md5"/>
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-ripemd160"/>
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha224"/>
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/>
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
+	</ns0:Extensions>
+	<ns0:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" AuthnRequestsSigned="true" WantAssertionsSigned="false">
+		<ns0:Extensions>
+			<ns2:UIInfo>
+				<ns2:DisplayName xml:lang="en">SP Target Viewer</ns2:DisplayName>
+				<ns2:Description xml:lang="en">SP Target Viewer</ns2:Description>
+				<ns2:InformationURL xml:lang="en">https://canvas-dev.linea.org.br</ns2:InformationURL>
+				<ns2:PrivacyStatementURL xml:lang="en">https://canvas-dev.linea.org.br</ns2:PrivacyStatementURL>
+			</ns2:UIInfo>
+		</ns0:Extensions>
+		<ns0:KeyDescriptor use="signing">
+			<ns3:KeyInfo>
+				<ns3:X509Data>
+					<ns3:X509Certificate>MIIC5DCCAcwCCQCcPO5Zk6EQ/zANBgkqhkiG9w0BAQsFADA0MQswCQYDVQQGEwJCUjEVMBMGA1UEBwwMRGVmYXVsdCBDaXR5MQ4wDAYDVQQKDAVMSW5lQTAeFw0yNjAzMTYxMzEyMTFaFw0yNzAzMTYxMzEyMTFaMDQxCzAJBgNVBAYTAkJSMRUwEwYDVQQHDAxEZWZhdWx0IENpdHkxDjAMBgNVBAoMBUxJbmVBMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzU9jrwh5dzpMRS77kQqYxp2BsdcWW0ZmcMzPRxr0V4p+ptkLlyR6EHTsHJ5wJDgx2/kzUo2hZ0O0vXkxi+V8KK7wwiNGyF25e5IhBFCBN0YNuMPTzIy70PpFQp8hdwxVpaU26sxl/QmoQYAKsZZ/cQokqxoV3uWXNJedSPEJNrc4JpByrkXO7plygYe+rHDNJ1qxxgeWqiTHMRlMCYV8/7ZD8ZSAHOU9e1v3elrmP2vNTv4SuArMLgkKP+ZmZXtPYY2DdWlMsC3to7ZrwdWix1/Ume3KCQBjNI65UH336tQoBpOmBJn5+An89w0AKjv4Wd4WzS0K/xmDPTlqlpcSTwIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQB//iQsOTQwDSzUCVObgr0k+wEcWyId9GdR960mQJ5tpnr/UTgVJBCeLUlmsfFW4lmmdHjzMA4sN1ukV8tkzXOozt7bfYcUP8/VanWeSkdWP5IijCyyvJs6ysR026+nFaCgmOMNtbcgtVvTA3NELTuAJigN5I88n05GUCRBVPLyb86d+XwsjRWgg8HYOl453bzhxjh6VkC9ONhQyOr7RcsbR4nK6i/WbD5qt0bmksFQn34Pz7oI0Xs3tNiy3ZWIG6vPRBlufG8iXFheZb0fBnr9NrRmSdTZnRAyBk5LiKTEDmERBvGy1IYbQv6r0Q8F7LViSYM9ieBiffkm5zhYO13C</ns3:X509Certificate>
+				</ns3:X509Data>
+			</ns3:KeyInfo>
+		</ns0:KeyDescriptor>
+		<ns0:KeyDescriptor use="encryption">
+			<ns3:KeyInfo>
+				<ns3:X509Data>
+					<ns3:X509Certificate>MIIC5DCCAcwCCQCcPO5Zk6EQ/zANBgkqhkiG9w0BAQsFADA0MQswCQYDVQQGEwJCUjEVMBMGA1UEBwwMRGVmYXVsdCBDaXR5MQ4wDAYDVQQKDAVMSW5lQTAeFw0yNjAzMTYxMzEyMTFaFw0yNzAzMTYxMzEyMTFaMDQxCzAJBgNVBAYTAkJSMRUwEwYDVQQHDAxEZWZhdWx0IENpdHkxDjAMBgNVBAoMBUxJbmVBMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzU9jrwh5dzpMRS77kQqYxp2BsdcWW0ZmcMzPRxr0V4p+ptkLlyR6EHTsHJ5wJDgx2/kzUo2hZ0O0vXkxi+V8KK7wwiNGyF25e5IhBFCBN0YNuMPTzIy70PpFQp8hdwxVpaU26sxl/QmoQYAKsZZ/cQokqxoV3uWXNJedSPEJNrc4JpByrkXO7plygYe+rHDNJ1qxxgeWqiTHMRlMCYV8/7ZD8ZSAHOU9e1v3elrmP2vNTv4SuArMLgkKP+ZmZXtPYY2DdWlMsC3to7ZrwdWix1/Ume3KCQBjNI65UH336tQoBpOmBJn5+An89w0AKjv4Wd4WzS0K/xmDPTlqlpcSTwIDAQABMA0GCSqGSIb3DQEBCwUAA4IBAQB//iQsOTQwDSzUCVObgr0k+wEcWyId9GdR960mQJ5tpnr/UTgVJBCeLUlmsfFW4lmmdHjzMA4sN1ukV8tkzXOozt7bfYcUP8/VanWeSkdWP5IijCyyvJs6ysR026+nFaCgmOMNtbcgtVvTA3NELTuAJigN5I88n05GUCRBVPLyb86d+XwsjRWgg8HYOl453bzhxjh6VkC9ONhQyOr7RcsbR4nK6i/WbD5qt0bmksFQn34Pz7oI0Xs3tNiy3ZWIG6vPRBlufG8iXFheZb0fBnr9NrRmSdTZnRAyBk5LiKTEDmERBvGy1IYbQv6r0Q8F7LViSYM9ieBiffkm5zhYO13C</ns3:X509Certificate>
+				</ns3:X509Data>
+			</ns3:KeyInfo>
+		</ns0:KeyDescriptor>
+		<ns0:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://canvas-dev.linea.org.br/saml2/ls/"/>
+		<ns0:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://canvas-dev.linea.org.br/saml2/ls/post"/>
+		<ns0:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</ns0:NameIDFormat>
+		<ns0:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</ns0:NameIDFormat>
+		<ns0:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://canvas-dev.linea.org.br/saml2/acs/" index="1"/>
+	</ns0:SPSSODescriptor>
+	<ns0:Organization>
+		<ns0:OrganizationName xml:lang="pt-br">LIneA</ns0:OrganizationName>
+		<ns0:OrganizationDisplayName xml:lang="pt-br">LIneA</ns0:OrganizationDisplayName>
+		<ns0:OrganizationURL xml:lang="pt-br">https://www.linea.org.br</ns0:OrganizationURL>
+	</ns0:Organization>
+	<ns0:ContactPerson contactType="technical">
+		<ns0:Company>LIneA</ns0:Company>
+		<ns0:GivenName>Service</ns0:GivenName>
+		<ns0:SurName>Desk</ns0:SurName>
+		<ns0:EmailAddress>helpdesk@linea.org.br</ns0:EmailAddress>
+	</ns0:ContactPerson>
+</ns0:EntityDescriptor>
+
+   <!--=================================================================================================================================-->
+   <!--Fim do Metadado do Canvas Dev (https://canvas-dev.linea.org.br/saml2/metadata/)-->
+   <!--=================================================================================================================================-->
+
+
+   <!--=================================================================================================================================-->
    <!--Inicio do Metadado do ... ()  -->
    <!--=================================================================================================================================-->
 
