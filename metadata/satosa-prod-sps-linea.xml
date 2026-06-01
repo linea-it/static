@@ -2227,6 +2227,86 @@ iAfGfx/S0EhkY60ryYZ+DRnXd84=
 
 
    <!--=================================================================================================================================-->
+   <!--Inicio do Metadado do Helpdesk (https://helpdesk.linea.org.br/)  -->
+   <!--=================================================================================================================================-->
+
+<md:EntityDescriptor
+	xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
+	xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
+	xmlns:ns1="urn:oasis:names:tc:SAML:metadata:algsupport"
+	xmlns:ns2="urn:oasis:names:tc:SAML:metadata:ui" entityID="https://helpdesk.linea.org.br/">
+	<md:Extensions>
+		<ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#md5" />
+		<ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#ripemd160" />
+		<ns1:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+		<ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224" />
+		<ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
+		<ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384" />
+		<ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2009/xmldsig11#dsa-sha256" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha1" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha224" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha384" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha512" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-md5" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-ripemd160" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha224" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384" />
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512" />
+	</md:Extensions>
+	<md:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" AuthnRequestsSigned="true" WantAssertionsSigned="false">
+		<md:Extensions>
+			<ns2:UIInfo>
+				<ns2:DisplayName xml:lang="en">SP MyDB</ns2:DisplayName>
+				<ns2:Description xml:lang="en">SP MyDB</ns2:Description>
+				<ns2:InformationURL xml:lang="en">https://helpdesk.linea.org.br</ns2:InformationURL>
+				<ns2:PrivacyStatementURL xml:lang="en">https://helpdesk.linea.org.br</ns2:PrivacyStatementURL>
+			</ns2:UIInfo>
+		</md:Extensions>
+		<md:KeyDescriptor use="signing">
+			<ds:KeyInfo>
+				<ds:X509Data>
+          <ds:X509Certificate>
+              MIIDqjCCApKgAwIBAgITdFAwhoJvVDfbVKVGaN9SxGuswDANBgkqhkiG9w0BAQsFADBlMQswCQYDVQQGEwJBVTETMBEGA1UECAwKU29tZS1TdGF0ZTEhMB8GA1UECgwYSW50ZXJuZXQgV2lkZ2l0cyBQdHkgTHRkMR4wHAYDVQQDDBVoZWxwZGVzay5saW5lYS5vcmcuYnIwHhcNMjYwMTEyMTcwMzU1WhcNMzYwMTEwMTcwMzU1WjBlMQswCQYDVQQGEwJBVTETMBEGA1UECAwKU29tZS1TdGF0ZTEhMB8GA1UECgwYSW50ZXJuZXQgV2lkZ2l0cyBQdHkgTHRkMR4wHAYDVQQDDBVoZWxwZGVzay5saW5lYS5vcmcuYnIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDD+TmgXW/HJhBcV3Yp7OVwy9SJsAbgCcZHF2IGz+J0XGJyVsE8gD+G3dyFF8mIESGIU76hLGMbD4u79Egi4lKlik2GiWNDSLoGCDWsJWd6NdZhebpKBvFkySCazb4E+X9VM5iUPeVRHrBFVUW1gfPcAGgPXE6bsaHrp7o82OyWvfTyPmKnTeQyJtu1M+2nhDpIczmeD6jcUkK98qRc1c1SG+Qh/HeIzJjisDk6niIk1hjIZegFlXdpkQs7CIsWHey01Bg654xjLDo8Ga1F6G1vFvfOC4TZ14CPWVo1IjRAwWNgbxo38F2CYWrItvrK4VbZ2z1Duzq0tPQ0X57I3tfvAgMBAAGjUzBRMB0GA1UdDgQWBBT/w0DpHrXaxmH6b2nww89a8cQA7zAfBgNVHSMEGDAWgBT/w0DpHrXaxmH6b2nww89a8cQA7zAPBgNVHRMBAf8EBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQBnc//QWA0dNd1V86xIBbmtw1BhriwyyzEMWPqvM1lHSPMDW4mVJN7Xz893WTzWugEHbaypfQXbzH5fTO8ICVdrNeoybQYyGHMGP+HqriQCkCD4bH6uX8YP6NnHMjJW7CjGRfQzmWh9gjJThaL26GHNRMjKyYHCdA1XTtE7leMXus8p9UMQMuUt5AaEF19nwg7LBjudcaZ5DzLtRDB1aZ6MqCgFL0lm5kbA0azS9U1af0BxLWMOM6Lw3yJMKY9kGUEiJjzlN1E1UXDHWDWVms+260oE1hwhCD+c9gmn9l991ObePvUMkoUvq9ODOR3EbiXSs8zKLQEyKUCPVcI2JayR
+          </ds:X509Certificate>				</ds:X509Data>
+			</ds:KeyInfo>
+		</md:KeyDescriptor>
+		<md:KeyDescriptor use="encryption">
+			<ds:KeyInfo>
+				<ds:X509Data>
+          <ds:X509Certificate>
+              MIIDqjCCApKgAwIBAgITdFAwhoJvVDfbVKVGaN9SxGuswDANBgkqhkiG9w0BAQsFADBlMQswCQYDVQQGEwJBVTETMBEGA1UECAwKU29tZS1TdGF0ZTEhMB8GA1UECgwYSW50ZXJuZXQgV2lkZ2l0cyBQdHkgTHRkMR4wHAYDVQQDDBVoZWxwZGVzay5saW5lYS5vcmcuYnIwHhcNMjYwMTEyMTcwMzU1WhcNMzYwMTEwMTcwMzU1WjBlMQswCQYDVQQGEwJBVTETMBEGA1UECAwKU29tZS1TdGF0ZTEhMB8GA1UECgwYSW50ZXJuZXQgV2lkZ2l0cyBQdHkgTHRkMR4wHAYDVQQDDBVoZWxwZGVzay5saW5lYS5vcmcuYnIwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDD+TmgXW/HJhBcV3Yp7OVwy9SJsAbgCcZHF2IGz+J0XGJyVsE8gD+G3dyFF8mIESGIU76hLGMbD4u79Egi4lKlik2GiWNDSLoGCDWsJWd6NdZhebpKBvFkySCazb4E+X9VM5iUPeVRHrBFVUW1gfPcAGgPXE6bsaHrp7o82OyWvfTyPmKnTeQyJtu1M+2nhDpIczmeD6jcUkK98qRc1c1SG+Qh/HeIzJjisDk6niIk1hjIZegFlXdpkQs7CIsWHey01Bg654xjLDo8Ga1F6G1vFvfOC4TZ14CPWVo1IjRAwWNgbxo38F2CYWrItvrK4VbZ2z1Duzq0tPQ0X57I3tfvAgMBAAGjUzBRMB0GA1UdDgQWBBT/w0DpHrXaxmH6b2nww89a8cQA7zAfBgNVHSMEGDAWgBT/w0DpHrXaxmH6b2nww89a8cQA7zAPBgNVHRMBAf8EBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBAQBnc//QWA0dNd1V86xIBbmtw1BhriwyyzEMWPqvM1lHSPMDW4mVJN7Xz893WTzWugEHbaypfQXbzH5fTO8ICVdrNeoybQYyGHMGP+HqriQCkCD4bH6uX8YP6NnHMjJW7CjGRfQzmWh9gjJThaL26GHNRMjKyYHCdA1XTtE7leMXus8p9UMQMuUt5AaEF19nwg7LBjudcaZ5DzLtRDB1aZ6MqCgFL0lm5kbA0azS9U1af0BxLWMOM6Lw3yJMKY9kGUEiJjzlN1E1UXDHWDWVms+260oE1hwhCD+c9gmn9l991ObePvUMkoUvq9ODOR3EbiXSs8zKLQEyKUCPVcI2JayR
+          </ds:X509Certificate>				</ds:X509Data>
+			</ds:KeyInfo>
+		</md:KeyDescriptor>
+		<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://helpdesk.linea.org.br/saml2/ls/" />
+		<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://helpdesk.linea.org.br/saml2/ls/post" />
+		<md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
+		<md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
+		<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://helpdesk.linea.org.br/marketplace/glpisaml/front/acs.php?idpId=1" index="1" />
+	</md:SPSSODescriptor>
+	<md:Organization>
+		<md:OrganizationName xml:lang="pt-br">LIneA</md:OrganizationName>
+		<md:OrganizationDisplayName xml:lang="pt-br">LIneA</md:OrganizationDisplayName>
+		<md:OrganizationURL xml:lang="pt-br">https://www.linea.org.br</md:OrganizationURL>
+	</md:Organization>
+	<md:ContactPerson contactType="technical">
+		<md:Company>LIneA</md:Company>
+		<md:GivenName>Service</md:GivenName>
+		<md:SurName>Desk</md:SurName>
+		<md:EmailAddress>helpdesk@linea.org.br</md:EmailAddress>
+	</md:ContactPerson>
+</md:EntityDescriptor>
+
+   <!--=================================================================================================================================-->
+   <!--Fim do Metadado do Helpdesk (https://helpdesk.linea.org.br/)  -->
+   <!--=================================================================================================================================-->
+
+   <!--=================================================================================================================================-->
    <!--Inicio do Metadado do ... ()  -->
    <!--=================================================================================================================================-->
 
