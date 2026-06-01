@@ -1099,14 +1099,14 @@ UCbp6x9u258cmzMdmr7mtEVlHqbTFutYZrOi08LcfdV8mzdu1byDVIxBiQ==
    <!--=================================================================================================================================-->
 
    <!--=================================================================================================================================-->
-   <!--Inicio do Metadado do Helpdesk (https://helpdesk.linea.org.br/)  -->
+   <!--Inicio do Metadado do Helpdesk (https://helpdesk-dev.linea.org.br/)  -->
    <!--=================================================================================================================================-->
 
 <md:EntityDescriptor
 	xmlns:ds="http://www.w3.org/2000/09/xmldsig#"
 	xmlns:md="urn:oasis:names:tc:SAML:2.0:metadata"
 	xmlns:ns1="urn:oasis:names:tc:SAML:metadata:algsupport"
-	xmlns:ns2="urn:oasis:names:tc:SAML:metadata:ui" entityID="https://helpdesk.linea.org.br/">
+	xmlns:ns2="urn:oasis:names:tc:SAML:metadata:ui" entityID="https://helpdesk-dev.linea.org.br/">
 	<md:Extensions>
 		<ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#md5" />
 		<ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#ripemd160" />
@@ -1135,8 +1135,8 @@ UCbp6x9u258cmzMdmr7mtEVlHqbTFutYZrOi08LcfdV8mzdu1byDVIxBiQ==
 			<ns2:UIInfo>
 				<ns2:DisplayName xml:lang="en">SP MyDB</ns2:DisplayName>
 				<ns2:Description xml:lang="en">SP MyDB</ns2:Description>
-				<ns2:InformationURL xml:lang="en">https://helpdesk.linea.org.br</ns2:InformationURL>
-				<ns2:PrivacyStatementURL xml:lang="en">https://helpdesk.linea.org.br</ns2:PrivacyStatementURL>
+				<ns2:InformationURL xml:lang="en">https://helpdesk-dev.linea.org.br</ns2:InformationURL>
+				<ns2:PrivacyStatementURL xml:lang="en">https://helpdesk-dev.linea.org.br</ns2:PrivacyStatementURL>
 			</ns2:UIInfo>
 		</md:Extensions>
 		<md:KeyDescriptor use="signing">
@@ -1155,11 +1155,11 @@ UCbp6x9u258cmzMdmr7mtEVlHqbTFutYZrOi08LcfdV8mzdu1byDVIxBiQ==
           </ds:X509Certificate>				</ds:X509Data>
 			</ds:KeyInfo>
 		</md:KeyDescriptor>
-		<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://helpdesk.linea.org.br/saml2/ls/" />
-		<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://helpdesk.linea.org.br/saml2/ls/post" />
+		<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://helpdesk-dev.linea.org.br/saml2/ls/" />
+		<md:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://helpdesk-dev.linea.org.br/saml2/ls/post" />
 		<md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</md:NameIDFormat>
 		<md:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</md:NameIDFormat>
-		<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://helpdesk.linea.org.br/marketplace/glpisaml/front/acs.php?idpId=1" index="1" />
+		<md:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://helpdesk-dev.linea.org.br/marketplace/glpisaml/front/acs.php?idpId=1" index="1" />
 	</md:SPSSODescriptor>
 	<md:Organization>
 		<md:OrganizationName xml:lang="pt-br">LIneA</md:OrganizationName>
@@ -1175,7 +1175,7 @@ UCbp6x9u258cmzMdmr7mtEVlHqbTFutYZrOi08LcfdV8mzdu1byDVIxBiQ==
 </md:EntityDescriptor>
 
    <!--=================================================================================================================================-->
-   <!--Fim do Metadado do Helpdesk (https://helpdesk.linea.org.br/)  -->
+   <!--Fim do Metadado do Helpdesk (https://helpdesk-dev.linea.org.br/)  -->
    <!--=================================================================================================================================-->
    
    <!--=================================================================================================================================-->
