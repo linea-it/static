@@ -1314,7 +1314,7 @@ UCbp6x9u258cmzMdmr7mtEVlHqbTFutYZrOi08LcfdV8mzdu1byDVIxBiQ==
 		<ns0:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="cutout-dev.linea.org.br/saml2/ls/post"/>
 		<ns0:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</ns0:NameIDFormat>
 		<ns0:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</ns0:NameIDFormat>
-		<ns0:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="cutout-dev.linea.org.br/saml2/acs/" index="1"/>
+		<ns0:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://cutout-dev.linea.org.br/saml2/acs/" index="1"/>
 	</ns0:SPSSODescriptor>
 	<ns0:Organization>
 		<ns0:OrganizationName xml:lang="pt-br">LIneA</ns0:OrganizationName>
