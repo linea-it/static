@@ -1256,6 +1256,84 @@ UCbp6x9u258cmzMdmr7mtEVlHqbTFutYZrOi08LcfdV8mzdu1byDVIxBiQ==
    <!--=================================================================================================================================-->
 
    <!--=================================================================================================================================-->
+   <!--Inicio do Metadado do (https://cutout-dev.linea.org.br/saml2/metadata/)  -->
+   <!--=================================================================================================================================-->
+
+<ns0:EntityDescriptor
+	xmlns:ns0="urn:oasis:names:tc:SAML:2.0:metadata"
+	xmlns:ns1="urn:oasis:names:tc:SAML:metadata:algsupport"
+	xmlns:ns2="urn:oasis:names:tc:SAML:metadata:ui"
+	xmlns:ns3="http://www.w3.org/2000/09/xmldsig#" entityID="cutout-dev.linea.org.br/saml2/metadata/">
+	<ns0:Extensions>
+		<ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#md5"/>
+		<ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#ripemd160"/>
+		<ns1:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+		<ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha224"/>
+		<ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+		<ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#sha384"/>
+		<ns1:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/>
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2009/xmldsig11#dsa-sha256"/>
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha1"/>
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha224"/>
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha256"/>
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha384"/>
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#ecdsa-sha512"/>
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-md5"/>
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-ripemd160"/>
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"/>
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha224"/>
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha384"/>
+		<ns1:SigningMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/>
+	</ns0:Extensions>
+	<ns0:SPSSODescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol" AuthnRequestsSigned="true" WantAssertionsSigned="false">
+		<ns0:Extensions>
+			<ns2:UIInfo>
+				<ns2:DisplayName xml:lang="en">SP Cutout Service</ns2:DisplayName>
+				<ns2:Description xml:lang="en">SP Cutout Service</ns2:Description>
+				<ns2:InformationURL xml:lang="en">cutout-dev.linea.org.br</ns2:InformationURL>
+				<ns2:PrivacyStatementURL xml:lang="en">cutout-dev.linea.org.br</ns2:PrivacyStatementURL>
+			</ns2:UIInfo>
+		</ns0:Extensions>
+		<ns0:KeyDescriptor use="signing">
+			<ns3:KeyInfo>
+				<ns3:X509Data>
+					<ns3:X509Certificate>MIIC6zCCAdMCFGPhIYdVyJuRP/sL01KEAQpe1wuPMA0GCSqGSIb3DQEBCwUAMDIxCzAJBgNVBAYTAkJSMRMwEQYDVQQIDApTb21lLVN0YXRlMQ4wDAYDVQQKDAVMSW5lQTAeFw0yNjA3MjMyMDQxMTVaFw0yNzA3MjMyMDQxMTVaMDIxCzAJBgNVBAYTAkJSMRMwEQYDVQQIDApTb21lLVN0YXRlMQ4wDAYDVQQKDAVMSW5lQTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAPOWWG2Ubs89qgB5RFjczeWEk2iGHmhfz6zU6f3WJMaziCYIcnjPXvfjnLgRJjs5qdkFixrUfxJCBgtYxqgZLHyZYwWk7pq1pCputq/894B7KzmrXuISjEXNcjg/loxISkTWJB/kZj6KepWByaQm/x3YXXSWymwxNfi+P4WIx4fgxm1TNdS7CVcFat52J0Yz1p/d3zfRS+jmjEVjS4YXu4sG7uXH18b5LL0EEH+MmnL5DtdfMIM7SnLwQUTAHig69tUW7513WiZ++/dQHL6eSnGvng68cBX9UtfqDgSUG+Att2ood2nMBrNFhnwhMCNONaE+bKy+oATyhtcIv9x0+eUCAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAM91Sj4aMY+hKw72MsF/LVp0XpLkJtseJPhfUXgNShpY0h7dtFKGmLa2xMk5HPufE5ow1i4zReBMOSBhYrRVlF0jL8inbba07+mzOwf6j1g8Ok5Ltr/eEcFoD58JZSuZJBpsQjRTzOD7EB+X2uQxAJUxzUSdTXrRBKaPUrLE0WZrq/ncnVfNJSb54CSWhCbf42dIrqhUO+FHm+O4a7pBgY0WiMtA2BuQhk4GVZRppQ2P57nkF2eDMakl929RMGzfoW3hCUE+bBQJZzCKrBVqi722ibbbPFgnKsVIPEnBrRICq1HOCAEko7r4C7w99q6wcEp32cbtdbD5olxka+z0E0Q==</ns3:X509Certificate>
+				</ns3:X509Data>
+			</ns3:KeyInfo>
+		</ns0:KeyDescriptor>
+		<ns0:KeyDescriptor use="encryption">
+			<ns3:KeyInfo>
+				<ns3:X509Data>
+					<ns3:X509Certificate>MIIC6zCCAdMCFGPhIYdVyJuRP/sL01KEAQpe1wuPMA0GCSqGSIb3DQEBCwUAMDIxCzAJBgNVBAYTAkJSMRMwEQYDVQQIDApTb21lLVN0YXRlMQ4wDAYDVQQKDAVMSW5lQTAeFw0yNjA3MjMyMDQxMTVaFw0yNzA3MjMyMDQxMTVaMDIxCzAJBgNVBAYTAkJSMRMwEQYDVQQIDApTb21lLVN0YXRlMQ4wDAYDVQQKDAVMSW5lQTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAPOWWG2Ubs89qgB5RFjczeWEk2iGHmhfz6zU6f3WJMaziCYIcnjPXvfjnLgRJjs5qdkFixrUfxJCBgtYxqgZLHyZYwWk7pq1pCputq/894B7KzmrXuISjEXNcjg/loxISkTWJB/kZj6KepWByaQm/x3YXXSWymwxNfi+P4WIx4fgxm1TNdS7CVcFat52J0Yz1p/d3zfRS+jmjEVjS4YXu4sG7uXH18b5LL0EEH+MmnL5DtdfMIM7SnLwQUTAHig69tUW7513WiZ++/dQHL6eSnGvng68cBX9UtfqDgSUG+Att2ood2nMBrNFhnwhMCNONaE+bKy+oATyhtcIv9x0+eUCAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAM91Sj4aMY+hKw72MsF/LVp0XpLkJtseJPhfUXgNShpY0h7dtFKGmLa2xMk5HPufE5ow1i4zReBMOSBhYrRVlF0jL8inbba07+mzOwf6j1g8Ok5Ltr/eEcFoD58JZSuZJBpsQjRTzOD7EB+X2uQxAJUxzUSdTXrRBKaPUrLE0WZrq/ncnVfNJSb54CSWhCbf42dIrqhUO+FHm+O4a7pBgY0WiMtA2BuQhk4GVZRppQ2P57nkF2eDMakl929RMGzfoW3hCUE+bBQJZzCKrBVqi722ibbbPFgnKsVIPEnBrRICq1HOCAEko7r4C7w99q6wcEp32cbtdbD5olxka+z0E0Q==</ns3:X509Certificate>
+				</ns3:X509Data>
+			</ns3:KeyInfo>
+		</ns0:KeyDescriptor>
+		<ns0:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="cutout-dev.linea.org.br/saml2/ls/"/>
+		<ns0:SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="cutout-dev.linea.org.br/saml2/ls/post"/>
+		<ns0:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</ns0:NameIDFormat>
+		<ns0:NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</ns0:NameIDFormat>
+		<ns0:AssertionConsumerService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="cutout-dev.linea.org.br/saml2/acs/" index="1"/>
+	</ns0:SPSSODescriptor>
+	<ns0:Organization>
+		<ns0:OrganizationName xml:lang="pt-br">LIneA</ns0:OrganizationName>
+		<ns0:OrganizationDisplayName xml:lang="pt-br">LIneA</ns0:OrganizationDisplayName>
+		<ns0:OrganizationURL xml:lang="pt-br">https://www.linea.org.br</ns0:OrganizationURL>
+	</ns0:Organization>
+	<ns0:ContactPerson contactType="technical">
+		<ns0:Company>LIneA</ns0:Company>
+		<ns0:GivenName>Service</ns0:GivenName>
+		<ns0:SurName>Desk</ns0:SurName>
+		<ns0:EmailAddress>helpdesk@linea.org.br</ns0:EmailAddress>
+	</ns0:ContactPerson>
+</ns0:EntityDescriptor>
+
+   <!--=================================================================================================================================-->
+   <!--Fim do Metadado do Canvas Dev (https://cutout-dev.linea.org.br/saml2/metadata/)-->
+   <!--=================================================================================================================================-->
+
+   <!--=================================================================================================================================-->
    <!--Inicio do Metadado do ... (https://...)  -->
    <!--=================================================================================================================================-->
 
