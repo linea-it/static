@@ -1292,8 +1292,8 @@ UCbp6x9u258cmzMdmr7mtEVlHqbTFutYZrOi08LcfdV8mzdu1byDVIxBiQ==
 			<ns2:UIInfo>
 				<ns2:DisplayName xml:lang="en">SP Cutout Service</ns2:DisplayName>
 				<ns2:Description xml:lang="en">SP Cutout Service</ns2:Description>
-				<ns2:InformationURL xml:lang="en">cutout-dev.linea.org.br</ns2:InformationURL>
-				<ns2:PrivacyStatementURL xml:lang="en">cutout-dev.linea.org.br</ns2:PrivacyStatementURL>
+				<ns2:InformationURL xml:lang="en">https://cutout-dev.linea.org.br</ns2:InformationURL>
+				<ns2:PrivacyStatementURL xml:lang="en">https://cutout-dev.linea.org.br</ns2:PrivacyStatementURL>
 			</ns2:UIInfo>
 		</ns0:Extensions>
 		<ns0:KeyDescriptor use="signing">
