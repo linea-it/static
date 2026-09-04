@@ -1,0 +1,5 @@
+# Infrastructure owners for SATOSA / static metadata changes.
+# Adjust the team slug if your GitHub team name differs.
+/metadata/ @linea-it/infra
+/scripts/lint_satosa_sps.py @linea-it/infra
+/docs/rnp-cafe-notify-template.md @linea-it/infra
