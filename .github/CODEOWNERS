@@ -1,5 +1,10 @@
-# Infrastructure owners for SATOSA / static metadata changes.
-# Adjust the team slug if your GitHub team name differs.
-/metadata/ @linea-it/infra
-/scripts/lint_satosa_sps.py @linea-it/infra
+# Infrastructure review only where production trust / federation is at risk,
+# or where Actions can dispatch deploys to ops (token-backed workflows).
+# Other paths (logos, eds, satosa-dev/sing SPS, etc.) need a normal PR approval,
+# not infra Code Owners — adjust team slug if needed.
+
+/metadata/satosa-prod-sps-*.xml @linea-it/infra
 /docs/rnp-cafe-notify-template.md @linea-it/infra
+/docs/deploy-and-rollback.md @linea-it/infra
+/scripts/lint_satosa_sps.py @linea-it/infra
+/.github/workflows/ @linea-it/infra

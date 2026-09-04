@@ -1,0 +1,40 @@
+name: Trigger static deploy on ops
+
+# Runs on GitHub-hosted runners only (ubuntu-latest).
+# Does NOT use the ops self-hosted agent. It only signals linea-it/ops,
+# where that agent picks up the Ansible deploy job.
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  dispatch-ops:
+    name: Dispatch deploy to ops
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Nginx - Static Files Deploy on ops
+        env:
+          GH_TOKEN: ${{ secrets.OPS_DISPATCH_TOKEN }}
+        run: |
+          set -euo pipefail
+          if [ -z "${GH_TOKEN}" ]; then
+            echo "Missing secret OPS_DISPATCH_TOKEN on linea-it/static."
+            echo "Create a PAT (or fine-grained token) with permission to dispatch workflows on linea-it/ops,"
+            echo "then add it as repository secret OPS_DISPATCH_TOKEN."
+            exit 1
+          fi
+          gh api --method POST repos/linea-it/ops/dispatches --input - <<EOF
+          {
+            "event_type": "deploy-static",
+            "client_payload": {
+              "ref": "${{ github.sha }}",
+              "sha": "${{ github.sha }}",
+              "pusher": "${{ github.actor }}"
+            }
+          }
+          EOF
+          echo "Dispatched deploy-static to linea-it/ops for ref ${{ github.sha }}"
