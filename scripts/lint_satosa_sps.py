@@ -64,7 +64,7 @@ class FileReport:
     sps: dict[str, SpInfo] = field(default_factory=dict)
 
     @property
-    ok(self) -> bool:
+    def ok(self) -> bool:
         return not self.errors
 
 
